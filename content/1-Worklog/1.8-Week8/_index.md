@@ -1,58 +1,42 @@
 ---
-title: "Week 8"
-date: 2026-07-29
-weight: 8
+title: "Week 8 Worklog"
+date: 2024-01-01
+weight: 1
 chapter: false
-pre: " <b> 1.8 </b> "
+pre: " <b> 1.8. </b> "
 ---
 
-#### Week 8 — Data improvement and retraining
+### Week 8 Objectives:
 
-**Dates:** 20/07 - 26/07/2026
+- **Application Deployment using Docker & Docker Compose on AWS:**
+  - Understand application containerization fundamentals, local testing, and multi-container deployment on Amazon EC2.
+  - Configure Amazon RDS instances as backend databases and integrate them with containerized web applications.
+  - Build custom Docker images, write `docker-compose.yml` configurations, and manage Docker image registries/pushing.
+- **Microservices Deployment on Amazon Elastic Container Service (ECS):**
+  - Master Amazon ECS concepts for running and stop-managing Docker containers across a cluster.
+  - Register service namespaces using AWS Cloud Map for service discovery.
+  - Define ECS Task Definitions, launch ECS Clusters, configure Application Load Balancers (ALB), and create scalable ECS Services.
+  - Validate application health via ALB endpoints and perform resource cleanup.
 
-#### Goals
+### Tasks to be carried out this week:
 
-- Analyse why the model performed poorly
-- Build a dataset simulating realistic shopping behaviour
-- Retrain and compare metrics across both versions
-- Handle a security incident arising during code handover
+| Day | Task                                                                                                                                                                                                                                                                                                                                               | Start Date | Completion Date | Reference Material                                                                                                                       |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Mon | - **Docker Fundamentals & RDS Integration:**<br> - Test local container deployment and prepare deployment scripts<br> - Launch and configure Amazon RDS database instance<br> - Provision and configure Amazon EC2 instance with Docker environment                                                                                                | 2026-07-26 | 2026-07-26      | [Deploy Application on Docker](https://000015.awsstudygroup.com/vi/1-introduce/)                                                         |
+| Tue | - **Docker & Docker Compose Deployment on EC2:**<br> - Deploy web applications using standalone Docker images<br> - Orchestrate multi-container applications using Docker Compose<br> - Push built container images to container registry and clean up EC2 local resources                                                                         | 2026-07-27 | 2026-07-27      | [Deploy Application on Docker](https://000015.awsstudygroup.com/vi/1-introduce/)                                                         |
+| Wed | - **Amazon ECS Architecture & Cluster Setup:**<br> - Study Amazon ECS architecture, cluster concepts, and service discovery mechanisms<br> - Complete prerequisite configurations and register namespaces in AWS Cloud Map<br> - Create an Amazon ECS Cluster for container hosting                                                                | 2026-07-28 | 2026-07-28      | [Deploy Applications on Amazon ECS](https://000016.awsstudygroup.com/vi/1-introduce/)                                                    |
+| Thu | - **ECS Task Definitions, ALB & Service Deployment:**<br> - Create ECS Task Definitions specifying container images, CPU/Memory limits, and port mappings<br> - Configure Application Load Balancer (ALB) with Target Groups and listener rules<br> - Create and launch ECS Service connected to the ALB for automated scaling and traffic routing | 2026-07-29 | 2026-07-29      | [Deploy Applications on Amazon ECS](https://000016.awsstudygroup.com/vi/1-introduce/)                                                    |
+| Fri | - **Verification, Testing & Complete Resource Cleanup:**<br> - Test deployment results by accessing application endpoints via ALB DNS<br> - Verify container health checks, auto-recovery, and ECS task status<br> - Clean up ECS Services, Clusters, ALBs, Cloud Map namespaces, EC2, and RDS instances                                           | 2026-07-30 | 2026-07-30      | [Deploy on Docker](https://000015.awsstudygroup.com/vi/1-introduce/) & [Deploy on ECS](https://000016.awsstudygroup.com/vi/1-introduce/) |
 
-#### Work carried out
+### Week 8 Achievements:
 
-Re-examined the first dataset and identified the cause: collaborative filtering
-works by finding groups of users who behave alike. If everyone interacts at
-random, no such groups exist. Changing the algorithm would not solve this.
+- **Docker Containerization Mastery:**
+  - Successfully containerized applications locally and deployed them to AWS EC2 using both standalone Docker images and Docker Compose orchestrations.
+  - Integrated containerized front-end/backend applications with Amazon RDS managed databases.
 
-Rewrote the data generator to simulate five properties of real behaviour:
-browsing sessions, a view to add-to-cart to purchase funnel, a power-law
-distribution, time-of-day rhythms, and user segments with different tastes. The
-result was 23,377 interactions across 200 users.
+- **Enterprise Container Orchestration with Amazon ECS:**
+  - Provisioned high-availability ECS Clusters, managed task definitions, and implemented service discovery via AWS Cloud Map.
+  - Configured Application Load Balancers (ALB) to distribute web traffic smoothly across running ECS Tasks and Services.
 
-Retrained on the same recipe and compared metrics against the previous version.
-Switched the campaign to the new solution version.
-
-During code handover, I discovered a source archive shared through cloud storage
-contained a config file with an AWS access key. I revoked the key immediately and
-changed the handover process.
-
-#### Results
-
-Metrics improved substantially across every measure:
-
-| Metric | Data v1 | Data v2 | Improvement |
-|---|---|---|---|
-| Precision@5 | 0.0889 | 0.4348 | 4.9x |
-| NDCG@10 | 0.1799 | 0.6512 | 3.6x |
-| MRR@25 | 0.1216 | 0.7130 | 5.9x |
-| Coverage | 0.8218 | 0.9505 | +15.7% |
-
-Conclusion: training data quality determines model performance more than
-algorithm choice.
-
-#### Difficulties and how they were resolved
-
-The leaked access key was the most memorable lesson. The impact was low because
-the key was read-only, which was itself the result of applying least privilege
-from the start. The lesson: the principle does not prevent mistakes, but it
-determines how much damage they cause. The team moved to centralised source
-control on Git instead of sharing archives.
+- **Cloud Governance & Cost Cleanup:**
+  - Conducted end-to-end verification of deployed microservices and systematically removed all ECS, ALB, RDS, and EC2 resources to prevent unnecessary cloud costs.

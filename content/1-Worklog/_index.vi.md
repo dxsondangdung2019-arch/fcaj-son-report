@@ -1,29 +1,27 @@
 ---
 title: "Nhật ký công việc"
-date: 2026-07-29
+date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-#### Tổng quan
+Trong suốt chương trình thực tập kéo dài 8 tuần, tôi đã từng bước tìm hiểu, thực hành và triển khai các giải pháp kiến trúc điện toán đám mây trên nền tảng Amazon Web Services (AWS). Trang nhật ký công việc này tổng hợp lại toàn bộ lộ trình kỹ thuật, các công việc chi tiết và kết quả đạt được qua từng tuần.
 
-Phần này ghi lại tiến độ công việc theo từng tuần trong kỳ thực tập tại chương
-trình First Cloud AI Journey, từ ngày 01/06/2026.
+Dưới đây là tóm tắt nội dung công việc được triển khai theo từng tuần:
 
-Mỗi tuần gồm bốn phần: mục tiêu đặt ra, công việc đã thực hiện, kết quả đạt
-được, và khó khăn gặp phải cùng cách xử lý.
+**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
 
-#### Bảng tiến độ tổng hợp
+**Tuần 2:** [Nền tảng mạng và xây dựng kiến trúc VPC](1.2-week2/)
 
-| Tuần | Thời gian | Trọng tâm |
-|---|---|---|
-| [Tuần 1](1.1-Week1/) | 01/06 - 07/06 | Nền tảng AWS, IAM và S3 |
-| [Tuần 2](1.2-Week2/) | 08/06 - 14/06 | Kiến trúc không máy chủ |
-| [Tuần 3](1.3-Week3/) | 15/06 - 21/06 | Chọn đề tài và thiết kế kiến trúc |
-| [Tuần 4](1.4-Week4/) | 22/06 - 28/06 | Dựng lớp lưu trữ và cơ sở dữ liệu |
-| [Tuần 5](1.5-Week5/) | 29/06 - 05/07 | Triển khai lớp API |
-| [Tuần 6](1.6-Week6/) | 06/07 - 12/07 | Tích hợp giao diện với API thật |
-| [Tuần 7](1.7-Week7/) | 13/07 - 19/07 | Thiết lập Amazon Personalize |
-| [Tuần 8](1.8-Week8/) | 20/07 - 26/07 | Cải tiến dữ liệu và huấn luyện lại |
-| [Tuần 9](1.9-Week9/) | 27/07 - 02/08 | Giám sát, kiểm thử và tài liệu |
+**Tuần 3:** [Quản trị tài nguyên tính toán và lưu trữ với EC2, EBS và S3](1.3-week3/)
+
+**Tuần 4:** [Triển khai và quản trị cơ sở dữ liệu với Amazon RDS và DynamoDB](1.4-week4/)
+
+**Tuần 5:** [Xây dựng hệ thống có tính sẵn sàng cao với Elastic Load Balancing và Auto Scaling](1.5-week5/)
+
+**Tuần 6:** [Nền tảng AWS CLI và thực hành bảo mật hệ thống](1.6-week6/)
+
+**Tuần 7:** [Quản trị AWS CLI nâng cao và quản lý danh tính tập trung với IAM Identity Center](1.7-week7/)
+
+**Tuần 8:** [Triển khai ứng dụng với Docker và Amazon Elastic Container Service (ECS)](1.8-week8/)

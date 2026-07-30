@@ -1,42 +1,50 @@
 ---
-title: "Week 2"
-date: 2026-07-29
-weight: 2
+title: "Week 2 Worklog"
+date: 2024-01-01
+weight: 1
 chapter: false
-pre: " <b> 1.2 </b> "
+pre: " <b> 1.2. </b> "
 ---
 
-#### Week 2 — Serverless architecture
+### Week 2 Objectives:
 
-**Dates:** 08/06 - 14/06/2026
+- **Deep Dive into Amazon VPC & Network Architecture:**
+  - Further master custom Amazon VPC architecture, advanced Subnet isolation, Route Tables, Internet Gateways, and NAT Gateways.
+  - Understand VPC Security mechanisms (Security Groups & Network ACLs) and advanced Site-to-Site VPN connectivity.
+- **Amazon EC2 Fundamentals & Operating Systems:**
+  - Master Amazon EC2 core components: Instance Types (Compute, Memory, Storage, Network optimized), AMIs, EBS vs Instance Store volumes.
+  - Learn EC2 security mechanisms: Key Pairs, Security Groups, IAM Roles, and SSM Session Manager.
+- **Hands-on Application Deployment & Governance:**
+  - Launch and configure Microsoft Windows Server 2025 and Amazon Linux 2023 instances.
+  - Deploy a Node.js Application on EC2 Windows and an AWS User Management Application on Amazon Linux.
+  - Practice Cost & Usage Governance with IAM and resource cleanup.
 
-#### Goals
+### Tasks to be carried out this week:
 
-- Understand serverless compute and when it is appropriate
-- Deploy a first Lambda function
-- Connect Lambda to API Gateway to create an Internet-reachable endpoint
-- Get familiar with DynamoDB and the NoSQL data model
+| Day | Task                                                                                                                                                                                                                                                                                                            | Start Date | Completion Date | Reference Material                                                          |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | --------------------------------------------------------------------------- |
+| Mon | - **Advanced Amazon VPC Deep Dive:**<br> - Review and deepen knowledge of custom VPC designs, IPv4/IPv6 CIDR ranges, and Subnets<br> - Study complex routing configurations with Route Tables, Internet Gateways, and NAT Gateways<br> - Explore VPC Firewall rules and Site-to-Site VPN architectural patterns | 2026-06-14 | 2026-06-14      | [Amazon VPC & VPN Deep Dive](https://000003.awsstudygroup.com/1-introduce/) |
+| Tue | - **Amazon EC2 Architecture & Storage Options:**<br> - Study EC2 Instance Families (General Purpose, Compute, Memory Optimized)<br> - Compare Amazon AMIs (AWS-provided, Marketplace, Custom AMIs)<br> - Analyze EBS Volumes (persistent) vs Instance Store Volumes (ephemeral storage warnings)                | 2026-06-15 | 2026-06-15      | [Introduction to Amazon EC2](https://000004.awsstudygroup.com/1-introduce/) |
+| Wed | - **EC2 Security & Server Provisioning:**<br> - Configure Key Pairs, Elastic IPs, Security Groups, and SSM Session Manager<br> - Launch a Microsoft Windows Server 2025 Instance<br> - Launch an Amazon Linux 2023 Instance inside custom VPC Subnets                                                           | 2026-06-16 | 2026-06-16      | [Introduction to Amazon EC2](https://000004.awsstudygroup.com/1-introduce/) |
+| Thu | - **Hands-on Application Deployments:**<br> - Deploy an AWS User Management Application on Amazon Linux 2023<br> - Deploy a Node.js Application on EC2 Windows Server<br> - Verify application connectivity and elastic network access                                                                          | 2026-06-17 | 2026-06-17      | [Introduction to Amazon EC2](https://000004.awsstudygroup.com/1-introduce/) |
+| Fri | - **Governance, Cost Control & Cleanup:**<br> - Implement Cost & Usage Governance policies using IAM and Tags<br> - Disassociate/release unused Elastic IPs and terminate unneeded instances<br> - Practice full resource cleanup procedures                                                                    | 2026-06-18 | 2026-06-18      | [Introduction to Amazon EC2](https://000004.awsstudygroup.com/1-introduce/) |
 
-#### Work carried out
+### Week 2 Achievements:
 
-Wrote and deployed a simple Node.js Lambda function, experimenting with
-different timeout and memory settings to observe the effect.
+- **Advanced Networking Proficiency (Amazon VPC):**
+  - Mastered subnets, routing logic through Route Tables, Internet Gateways, and NAT Gateways for secure public/private isolation.
+  - Understood VPC network security design and Site-to-Site VPN concepts for hybrid connectivity.
 
-Created an HTTP API in API Gateway, wired it to Lambda and tested it with `curl`.
-Studied the event structure API Gateway passes to Lambda.
+- **Comprehensive EC2 Lifecycle Knowledge:**
+  - Learned how to choose appropriate EC2 Instance Types based on compute, memory, and network requirements.
+  - Differed persistent EBS volumes from temporary Instance Store volumes to avoid data loss.
+  - Mastered EC2 access controls using Key Pairs, IAM Roles, and secure Systems Manager Session Manager.
 
-Created a first DynamoDB table and practised PutItem, GetItem, Query and Scan.
-Compared the cost and speed of Query versus Scan on the same table.
+- **Multi-OS Application Deployment:**
+  - Successfully provisioned Microsoft Windows Server 2025 and Amazon Linux 2023 instances.
+  - Deployed and configured a Node.js web application on Windows Server.
+  - Deployed an AWS User Management Application on Amazon Linux 2023.
 
-#### Results
-
-- Deployed a complete API running on the Internet with no servers to manage
-- Understood the fundamental difference between Query and Scan in DynamoDB
-- Realised NoSQL table design follows access patterns rather than normalisation
-
-#### Difficulties and how they were resolved
-
-I hit a problem where Lambda called DynamoDB and returned a permissions error.
-Re-reading the documentation, I learned that Lambda uses an execution role rather
-than the creator's credentials. This was the first time IAM felt practical rather
-than theoretical.
+- **Cost & Resource Governance Execution:**
+  - Configured IAM Cost & Usage Governance rules using tag-based resource tracking.
+  - Successfully executed clean-up procedures to prevent unexpected charges (released idle Elastic IPs, terminated temporary instances).
