@@ -1,6 +1,6 @@
-baseURL = "https://github.com/dxsondangdung2019-arch/fcaj-son-report.git"
-relativeURLs = false
-canonifyURLs = true
+baseURL = "https://dxsondangdung2019-arch.github.io/fcaj-son-report/"
+relativeURLs = true
+canonifyURLs = false
 defaultContentLanguage = "en"
 
 # Change the default theme to be use when building the site with Hugo
