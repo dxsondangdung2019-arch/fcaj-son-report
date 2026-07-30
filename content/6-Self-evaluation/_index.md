@@ -8,16 +8,16 @@ pre: " <b> 6. </b> "
 
 #### Self-evaluation summary
 
-| Criterion                   | Level        | Comment                                                                    |
-| --------------------------- | ------------ | -------------------------------------------------------------------------- |
-| Knowledge                   | Good         | Solid foundation in serverless AWS architecture and core services          |
-| Learning ability            | Good         | Proactive in studying official AWS documentation and hands-on practice     |
-| Initiative                  | Good         | Proposed data quality improvements to enhance recommendation performance   |
-| Discipline                  | Good         | Consistently met project deadlines and followed strict delivery schedules  |
-| Communication               | Fair to Good | Effectively articulated technical concepts to cross-functional teammates   |
-| Teamwork                    | Fair         | Recognized the critical value of early schema and API contract agreements  |
-| Problem solving             | Good         | Developed a structured, root-cause debugging methodology                   |
-| Contribution to the project | Good         | Key contributor to AWS infrastructure setup and recommendation system work |
+| Criterion                   | Level | Comment                                                                    |
+| --------------------------- | ----- | -------------------------------------------------------------------------- |
+| Knowledge                   | Good  | Solid foundation in serverless AWS architecture and core services          |
+| Learning ability            | Good  | Proactive in studying official AWS documentation and hands-on practice     |
+| Initiative                  | Good  | Proposed data quality improvements to enhance recommendation performance   |
+| Discipline                  | Good  | Consistently met project deadlines and followed strict delivery schedules  |
+| Communication               | Fair  | Effectively articulated technical concepts to cross-functional teammates   |
+| Teamwork                    | Fair  | Recognized the critical value of early schema and API contract agreements  |
+| Problem solving             | Good  | Developed a structured, root-cause debugging methodology                   |
+| Contribution to the project | Good  | Key contributor to AWS infrastructure setup and recommendation system work |
 
 #### Detailed comments
 
@@ -43,7 +43,7 @@ Additionally, I proactively monitored cloud resource utilization to optimize cos
 
 I maintained strong personal discipline, adhering to project schedules and delivering all assigned features on time. While my early learning focus was somewhat broad, I quickly narrowed my scope once project milestones were established, resulting in significantly higher output quality.
 
-**Communication — Fair to Good**
+**Communication — Fair**
 
 Working alongside teammates from diverse technical backgrounds pushed me to refine my communication style. I grew confident in facilitating technical discussions and translating complex AWS infrastructure concepts into clear, accessible language for non-cloud team members.
 

@@ -6,121 +6,101 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# Executive Summary: FCAJ Knowledge Sharing Session – June 2026
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+### Event Overview
 
-### Event Objectives
+- **Event Name:** FCAJ Knowledge Sharing Session
+- **Date:** June 13, 2026
+- **Location:** Bitexco Financial Tower, Thành phố Hồ Chí Minh, Hồ Chí Minh
+- **Role:** Attendee
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+This knowledge-sharing session provided a comprehensive bridge between academic learning and real-world industry practices. The event focused on career development in the Cloud and AI ecosystem, demystifying the DevOps profession, and delivering deep technical insights into System Design on AWS.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Danh Hoang Hieu Nghi** – AI Engineer, AWS Community Builder, AWS Student Builder Group Leader
+- **Dinh Trung Kien & Nguyen Minh Tho** – System Design Experts
+- **Mr. Dat Pham** – Data Analytics Engineer
+- **Mr. Cuong Nguyen** – Process Engineer
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### 1. Developing with Cloud & AI
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- **Topic:** _"From First Cloud AI Journey to AWS Partner"_
+- Mr. Hieu Nghi shared his personal capacity development journey and strategies for leveraging AWS resources.
+- Provided a clear orientation on becoming an AWS Community Builder and advancing to an AWS Partner.
 
-#### Transitioning to modern application architecture – Microservices
+#### 2. Decoding the DevOps Profession
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **Topic:** _"What does a DevOps Engineer really do?"_
+- Debunked common myths surrounding the DevOps role.
+- Delivered a deep dive into practical responsibilities: building CI/CD pipelines, Infrastructure as Code (IaC), and continuous system monitoring and operations.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### 3. System Design on AWS
 
-#### Domain-Driven Design (DDD)
+- **Topic:** _"A scalable URL shortening service on AWS"_
+- Dissected a classic system architecture problem: designing a URL shortening service.
+- Focused on building a highly scalable system capable of handling high traffic, with maximum utilization of AWS managed services.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### 4. Corporate Culture and Real-world Stories
 
-#### Event-Driven Architecture
+- **Topic:** _"Real-world stories and culture in multinational corporations"_
+- Provided authentic perspectives on the pressures and opportunities within international environments.
+- Emphasized the importance of Process thinking and Data Analytics in strategic decision-making.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+### Core Takeaways
 
-#### Compute Evolution
+#### Career Development Mindset
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+- **Clear Roadmap:** Understanding the importance of combining theoretical learning, hands-on labs, and achieving AWS Certifications.
+- **Community Mindset:** Recognizing that joining tech communities (e.g., AWS Student Builder) serves as a powerful launchpad for learning and professional networking.
 
-#### Amazon Q Developer
+#### Technical Architecture (System Design)
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- **Distributed Design:** Approached the URL Shortening problem with strategic considerations for Database selection (Relational vs. NoSQL), Caching strategies, and Load balancing.
+- **Scalability & High Availability:** Developed a deep understanding of designing for scale and resilience on the Cloud.
 
-### Key Takeaways
+#### DevOps & Automation Mindset
 
-#### Design Mindset
+- **CI/CD as Culture:** Realized that CI/CD is not merely a toolset but a fundamental working culture.
+- **Infrastructure as Code:** Understood the critical role of IaC in minimizing human errors during infrastructure deployment.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+#### Soft Skills
 
-#### Technical Architecture
+- **Cross-functional Communication:** The ability to present technical issues clearly to non-technical stakeholders.
+- **Professional Discipline:** Emphasized proactiveness, discipline, and fast adaptability in a multinational working environment.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+### Application to Work
 
-#### Modernization Strategy
+- **Apply System Design:** Integrate scalability and data flow considerations from the initial design phase in current projects (e.g., AI/ML initiatives).
+- **Adopt Automation:** Start learning and applying basic CI/CD pipelines to automate deployments for personal and internship projects.
+- **Pursue Certifications:** Set clear goals to achieve AWS certifications (e.g., Cloud Practitioner or Solutions Architect) to solidify foundational knowledge.
+- **Enhance Soft Skills:** Be more proactive in seeking mentorship, practice a professional work ethic, and adhere strictly to deadlines.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+### Event Experience & Conclusion
 
-### Applying to Work
+Attending the FCAJ Knowledge Sharing Session was an eye-opening experience that bridged the gap between academic theory and real-world corporate practice.
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+#### Learning from Industry Experts
 
-### Event Experience
+- Authentic stories and real-world case studies shortened the distance between theory and practice.
+- The speakers' problem-solving approaches greatly inspired a shift in my learning methodology.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+#### Deep Architectural Mindset
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+- Gained a strong appreciation for the complexity of designing a seemingly simple system like a URL shortening service.
+- Learned how AWS engineers calculate and optimize for throughput, storage, and latency.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Broadening Perspectives on IT Roles
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+- Recognized that DevOps, Data Analytics, and other IT functions do not operate in silos but are tightly interconnected gears driving business value.
+- Identified personal weaknesses in Infrastructure knowledge, providing a clear direction for future improvement.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Lessons Learned
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- Technology evolves constantly; having a solid foundational mindset (System Design, DevOps culture) is more valuable than merely knowing how to use specific tools.
+- English proficiency and a Growth mindset are prerequisites for surviving and thriving in multinational corporations.
 
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> Overall, the event provided not only "hardcore" technical knowledge but also a comprehensive view of corporate culture, helping me clearly shape my learning and career path for the journey ahead.

@@ -6,120 +6,67 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Bài thu hoạch "AWS First Cloud AI Journey Community Day - June 2026"
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Thông Tin Chung
+
+Đây là sự kiện cộng đồng được tổ chức online bởi AWS Study Group, phát trực tiếp trên YouTube vào sáng thứ Bảy, ngày 27/06/2026, từ 9h đến 12h. Sự kiện ban đầu dự kiến diễn ra tại Bitexco Financial Tower, TP.HCM. Tôi tham gia với vai trò người tham dự.
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+Buổi chia sẻ quy tụ các founder và chuyên gia trong ngành để kể lại những trải nghiệm thực tế khi làm việc với Cloud và AI. Ngoài phần chia sẻ kinh nghiệm, chương trình còn đi sâu vào cách xây dựng và vận hành một Voice Agent trên nền tảng AWS bằng Amazon Bedrock, cách các công cụ AI như DevOps Agent và Amazon Q đang được dùng để giải quyết các bài toán vận hành IT và nhân sự hàng ngày, và khép lại bằng chủ đề bảo mật khi tích hợp AI qua MCP Server.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Steve Tran** – Founder, Cloud Thinker
+- **Nghi, Kiet, Trung** – Diễn giả phiên Voice AI (Renova Cloud, Student Video Group, R AI)
+- **Bao & Nguyen** – Cloud Kinetis
+- **Truong & Minh Anh** – Noventis
+- **Toan Nguyen & Nghi** – Phiên Security & Amazon Q Integration
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Tư duy "Cloud Thinker" khi xây dựng sản phẩm
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Steve Tran mở đầu bằng câu chuyện khởi nghiệp của chính mình và những khó khăn khi vận hành một Contact Center. Điều đọng lại nhất với tôi là: trước khi bắt tay viết code, kỹ sư cần thực sự hiểu "nỗi đau" của khách hàng — công nghệ chỉ nên là bước tiếp theo, không phải điểm xuất phát.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Voice AI trong thực tế, cho thị trường Việt Nam
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Đây là phần kỹ thuật đậm đặc nhất buổi sáng. Nghi trình bày kiến trúc tổng thể để xây dựng một hệ thống Voice AI hoàn chỉnh, sau đó Kiet demo trực tiếp một Voice Agent chạy trên nền Amazon Bedrock. Trung tiếp nối bằng góc nhìn thực chiến khi triển khai giải pháp này cho doanh nghiệp lớn tại Việt Nam — từ chuyện giọng vùng miền, từ vựng chuyên ngành, cho đến điều quan trọng nhất: thiết kế kịch bản chuyển giao mượt mà giữa AI và con người (human fallback) khi AI không xử lý được.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### DevOps Agent như một công cụ vận hành
 
-#### Domain-Driven Design (DDD)
+Bao và Nguyen cho thấy cách một Dev Agent có thể giúp đội IT tự động truy tìm nguyên nhân gốc rễ của sự cố, từ đó rút ngắn thời gian hệ thống bị downtime — một cách trực tiếp để giảm Mean Time To Recovery.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Amazon Q trong lĩnh vực nhân sự
 
-#### Event-Driven Architecture
+Truong và Minh Anh đưa câu chuyện sang mảng back-office, chia sẻ cách Amazon Q đang được ứng dụng để tự động hóa một phần quy trình tuyển dụng, từ sàng lọc ứng viên đến phân tích dữ liệu HR một cách khách quan hơn.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Giữ an toàn: tích hợp với MCP Server
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+Toan Nguyen và Nghi khép lại phần kỹ thuật bằng cách giải thích cách cấu hình bảo mật riêng cho Amazon Q, và cách MCP Server cho phép AI kết nối với các hệ thống bên thứ ba mà không đánh đổi an toàn dữ liệu.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+**Về tư duy sản phẩm** — Một Voice Agent chỉ thực sự trở thành sản phẩm khi nó xử lý được sự "lộn xộn" của hội thoại đời thực (giọng vùng miền, tiếng lóng) và luôn chừa chỗ cho con người can thiệp khi cần.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+**Về nền tảng công nghệ** — Tôi có được hiểu biết bước đầu về Amazon Bedrock và cách các ứng dụng GenAI được xây dựng trên đó, lần đầu tiên tiếp cận kiến trúc MCP và lý do nó quan trọng để mở rộng khả năng của AI một cách an toàn, cùng cái nhìn rõ hơn về việc AI không chỉ dùng để trò chuyện mà còn có thể đọc log, phân tích nguyên nhân và hỗ trợ debug hệ thống thực sự hữu ích.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+Sắp tới, tôi muốn chậm lại trước khi lao vào code, thay vào đó áp dụng thói quen của Steve Tran là phân tích kỹ vấn đề và bối cảnh trước khi thiết kế giải pháp. Tôi cũng đưa Amazon Bedrock vào danh sách cần tìm hiểu cho các dự án GenAI sắp tới, và sẽ áp dụng quy trình phân tích nguyên nhân gốc rễ từ phiên DevOps Agent vào lần debug tiếp theo trong các bài lab AWS của mình.
 
-### Trải nghiệm trong event
+### Trải Nghiệm Trong Event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Dù chỉ theo dõi online qua YouTube, FCAJ Community Day vẫn mang lại cảm giác khá sống động.
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+**Demo giúp lý thuyết trở nên dễ hình dung** — Xem Kiet demo Voice Agent và Bao trình bày DevOps Agent giúp những khái niệm vốn trừu tượng trở nên trực quan và dễ hiểu hơn hẳn.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+**Nhiều góc nhìn khác nhau trong cùng một buổi** — Với diễn giả đến từ Cloud Thinker, Renova Cloud, R AI, Cloud Kinetis và Noventis, chương trình di chuyển tự nhiên giữa các vấn đề kỹ thuật như bảo mật, kiến trúc và các vấn đề kinh doanh như vận hành HR, Contact Center.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+**Một cộng đồng luôn sát cánh** — Sự kiện khép lại bằng tấm ảnh lưu niệm và hoạt động giveaway, một khoảnh khắc nhỏ nhưng cho thấy rõ sự gắn kết của cộng đồng AWS Study Group, và điều đó khiến tôi có thêm động lực để tiếp tục theo đuổi con đường cloud technology.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+**Một số hình ảnh khi tham gia sự kiện**
+_Thêm các hình ảnh của các bạn tại đây_
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+> Nhìn chung, sự kiện là một cầu nối trọn vẹn giữa công nghệ AI hiện đại và thực tế vận hành doanh nghiệp. Nó giúp tôi có thêm nền tảng kiến trúc vững hơn và một tư duy hướng đến giá trị rõ ràng hơn cho hành trình Cloud sắp tới của mình.
