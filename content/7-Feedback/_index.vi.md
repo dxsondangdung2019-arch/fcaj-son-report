@@ -8,89 +8,47 @@ pre: " <b> 7. </b> "
 
 #### 1. Cảm nhận về chương trình
 
-**Được làm trên tài khoản AWS thật** là khác biệt lớn nhất so với học trên lớp.
-Khi tài nguyên phát sinh chi phí thật, em buộc phải suy nghĩ trước khi tạo và
-nhớ dọn dẹp sau khi dùng. Thói quen đó không hình thành được nếu chỉ làm bài tập
-trên môi trường mô phỏng.
+**Trải nghiệm thực chiến trên tài khoản AWS thật** là điểm sáng vượt trội giúp em nâng cao tư duy kỹ thuật. Việc quản lý tài nguyên trong môi trường thực tế đã hình thành cho em thói quen tác phong chuyên nghiệp: luôn tính toán cẩn trọng trước khi triển khai và chủ động dọn dẹp tài nguyên sau khi sử dụng. Đây là tư duy vận hành thực tế không thể có nếu chỉ học qua các mô hình giả lập.
 
-**Hình thức tự học** ban đầu khiến em thấy khó vì không có ai chỉ từng bước.
-Nhưng sau vài tuần em nhận ra đây mới là cách làm việc thật: ngoài thực tế cũng
-không ai đưa hướng dẫn từng bước, chỉ có tài liệu và vấn đề cần giải quyết. Kỹ
-năng đọc tài liệu chính thức và tự chẩn đoán lỗi là thứ em mang theo được lâu
-nhất.
+**Mô hình tự học chủ động** là động lực tuyệt vời thúc đẩy sự bứt phá cá nhân. Nhờ được thử thách tự giải quyết bài toán thực tế, em đã rèn luyện được kỹ năng đọc – hiểu tài liệu kỹ thuật chính thức và tư duy phân tích nguyên nhân gốc rễ. Đây chính là nền tảng kỹ thuật vững chắc nhất mà em tích lũy được cho sự nghiệp sau này.
 
-**Yêu cầu viết workshop dạng lab** lúc đầu em nghĩ chỉ là thủ tục báo cáo. Nhưng
-khi viết mới thấy: để hướng dẫn người khác làm lại được, mình phải thật sự hiểu
-từng bước chứ không thể viết mơ hồ. Nhiều chỗ em tưởng đã hiểu, tới lúc viết ra
-mới phát hiện là chưa. Đây là cách kiểm tra kiến thức hiệu quả hơn nhiều so với
-tự đánh giá.
+**Yêu cầu đóng gói workshop dạng Lab** mang lại giá trị học tập rất lớn. Khi trực tiếp xây dựng tài liệu hướng dẫn cho người khác, em buộc phải hệ thống hóa lại toàn bộ kiến thức, đào sâu các chi tiết kỹ thuật và lấp đầy những khoảng trống tri thức một cách bài bản nhất.
 
 #### 2. Mức độ hài lòng
 
-**Đánh giá chung: 9/10 — Rất hài lòng.**
+**Đánh giá chung: 9/10 — Rất hài lòng**
 
-| Khía cạnh | Mức độ | Lý do |
-|---|---|---|
-| Nội dung học | Rất hài lòng | Bám sát thực tế, có lab thực hành trên tài khoản thật |
-| Hỗ trợ từ mentor | Hài lòng | Hỗ trợ đúng lúc, không làm thay nên buộc mình tự tìm hiểu |
-| Cộng đồng | Rất hài lòng | Nhóm AWS Study Group sôi nổi, dễ hỏi và được trả lời |
-| Tổ chức chương trình | Hài lòng | Rõ ràng về quy định và thời hạn |
-| Cơ hội thực hành | Rất hài lòng | Được tự triển khai dự án thật thay vì chỉ làm bài tập |
+| Khía cạnh            | Mức độ       | Lý do                                                                                           |
+| -------------------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| Nội dung học         | Rất hài lòng | Tính thực chiến cao, bám sát các mô hình triển khai thực tế trên cloud                          |
+| Hỗ trợ từ mentor     | Hài lòng     | Mentor định hướng tư duy giải quyết vấn đề xuất sắc, phát huy tối đa tính chủ động của học viên |
+| Cộng đồng            | Rất hài lòng | Cộng đồng AWS Study Group năng động, nhiệt tình hỗ trợ và chia sẻ tri thức                      |
+| Tổ chức chương trình | Hài lòng     | Quy trình tổ chức bài bản, lộ trình và thời hạn rõ ràng                                         |
+| Cơ hội thực hành     | Rất hài lòng | Được trực tiếp thiết kế, triển khai và vận hành hệ thống thực tế                                |
 
-Điểm em thấy giá trị nhất là chương trình không dạy theo kiểu cầm tay chỉ việc,
-mà đặt ra vấn đề rồi để học viên tự giải quyết. Cách này khó hơn nhưng đọng lại
-lâu hơn.
+Điều em trân trọng nhất là chương trình chú trọng việc phát triển tư duy kỹ sư độc lập. Việc tự tay vượt qua các thử thách kỹ thuật giúp kiến thức thu nhận được trở nên sâu sắc và bền vững hơn rất nhiều.
 
-#### 3. Điểm cần cải thiện
+#### 3. Đề xuất cải tiến trải nghiệm cho các khóa sau
 
-Những góp ý dưới đây em viết với tinh thần xây dựng, dựa trên trải nghiệm của
-một người mới bắt đầu.
+Với mong muốn góp phần nâng cao hơn nữa chất lượng chương trình, em xin đề xuất một số ý tưởng mang tính đóng góp xây dựng:
 
-**Có buổi định hướng về quản lý chi phí ngay từ đầu.** Nhiều bạn trong nhóm em
-không biết rằng một số dịch vụ tính phí theo thời gian tồn tại chứ không phải
-theo lượt dùng, ví dụ Personalize campaign. Nếu được nhắc sớm về cách đặt AWS
-Budgets và danh sách các dịch vụ dễ phát sinh chi phí, mọi người sẽ tự tin thử
-nghiệm hơn thay vì e dè.
+- **Tổ chức buổi định hướng quản lý chi phí sớm (Cost Optimization):** Việc hướng dẫn đặt cảnh báo chi phí (AWS Budgets) và nhận diện các dịch vụ tính phí theo thời gian ngay từ tuần đầu sẽ giúp học viên hoàn toàn tự tin và thoải mái hơn trong quá trình thử nghiệm.
+- **Bộ gợi ý đề tài theo cấp độ:** Cung cấp bộ danh mục đề tài mẫu kèm ước lượng quy mô sẽ giúp các nhóm dễ dàng định hình bài toán vừa sức và tối ưu lộ trình phát triển ngay từ giai đoạn khởi chạy.
+- **Danh mục tự kiểm tra (Checklist) chuẩn hóa:** Cung cấp mẫu checklist định hướng cho sản phẩm cuối khóa (ví dụ: số lượng dịch vụ tối thiểu, tích hợp giám sát/cảnh báo) giúp các nhóm hoàn thiện hồ sơ dự án nhanh chóng và chính xác.
+- **Hướng dẫn nhanh về công cụ Hugo:** Một bộ khung mẫu hoặc tài liệu hướng dẫn nhanh về Hugo sẽ giúp học viên tiết kiệm thời gian thiết lập hạ tầng báo cáo, từ đó tập trung tối đa nguồn lực vào việc trau dồi nội dung kỹ thuật.
 
-**Gợi ý một số đề tài mẫu theo mức độ khó.** Giai đoạn chọn đề tài, nhóm em khá
-lúng túng vì không biết phạm vi nào là vừa sức trong thời gian có hạn. Ban đầu
-nhóm định làm hệ thống lớn hơn nhiều, sau phải cắt bớt. Một danh sách đề tài
-tham khảo kèm ước lượng công sức sẽ giúp các nhóm không chọn quá rộng.
+#### 4. Sẵn sàng giới thiệu chương trình cho bạn bè
 
-**Có checklist tự kiểm trước khi nộp.** Ví dụ workshop cần tối thiểu bao nhiêu
-dịch vụ, cần có những mục nào, định dạng nộp ra sao. Em phải đọc kỹ trang quy
-định nhiều lần mới nắm hết, và suýt bỏ sót phần giám sát và cảnh báo.
+**Chắc chắn có — và em đã chủ động giới thiệu cho nhiều bạn bè cùng ngành.**
 
-**Hướng dẫn nhanh về Hugo cho người chưa từng dùng.** Việc dựng website báo cáo
-tốn của em khá nhiều thời gian ở khâu kỹ thuật, thời gian đó lẽ ra dành cho nội
-dung sẽ tốt hơn.
+Ba lý do lớn khiến em tin tưởng giới thiệu chương trình này:
 
-#### 4. Có giới thiệu chương trình cho bạn bè không
+1. **Môi trường thực hành thực chiến 100%:** Học viên được trải nghiệm quy trình chuẩn của một kỹ sư Cloud: tự cấp phát, tự chịu trách nhiệm và tự vận hành hạ tầng AWS thật.
+2. **Hình thành tư duy làm việc chuyên nghiệp:** Chương trình không chỉ rèn luyện kiến thức kỹ thuật mà còn rèn luyện các thói quen cốt lõi: đọc tài liệu gốc, phân tích lỗi theo chuỗi, đánh giá bài toán chi phí và ra quyết định kỹ thuật bài bản.
+3. **Sản phẩm đầu ra ấn tượng:** Kết thúc kỳ thực tập, học viên sở hữu một sản phẩm chạy thực tế, mã nguồn hoàn thiện cùng tài liệu kiến trúc chuyên nghiệp—đây là điểm cộng rất lớn khi chinh phục các nhà tuyển dụng.
 
-**Có, và em đã giới thiệu.**
-
-Ba lý do em sẽ khuyên bạn bè tham gia:
-
-**Thứ nhất, được thực hành trên hạ tầng thật.** Phần lớn khoá học về đám mây
-dừng ở video và bài tập mô phỏng. Ở đây học viên tự tạo tài nguyên, tự trả giá
-cho sai lầm của mình, và tự dọn dẹp. Trải nghiệm đó không thay thế được.
-
-**Thứ hai, học được cách làm việc chứ không chỉ học kiến thức.** Kiến thức về
-dịch vụ AWS thì đọc tài liệu cũng có. Nhưng thói quen đọc tài liệu gốc, chẩn
-đoán lỗi theo lớp, cân nhắc đánh đổi trước khi quyết định, và ý thức về chi phí
-thì phải va vào thực tế mới hình thành được.
-
-**Thứ ba, có sản phẩm cụ thể để nói khi đi phỏng vấn.** Sau chương trình, em có
-một hệ thống chạy thật, một repository mã nguồn, và một tài liệu kỹ thuật giải
-thích được từng quyết định. Đó là thứ cụ thể hơn nhiều so với một dòng chứng chỉ
-trong CV.
-
-Em sẽ lưu ý bạn bè một điều: chương trình phù hợp với người sẵn sàng tự học. Nếu
-quen được hướng dẫn từng bước thì tuần đầu sẽ khá chật vật.
+_Lưu ý nhỏ:_ Chương trình sẽ mang lại bứt phá lớn nhất cho những bạn có tinh thần chủ động, sẵn sàng đón nhận thử thách và yêu thích việc tự học.
 
 #### Lời cảm ơn
 
-Em xin cảm ơn các anh chị mentor và cộng đồng AWS Study Group đã hỗ trợ trong
-suốt kỳ thực tập. Cảm ơn các bạn trong nhóm đã cùng nhau hoàn thành dự án trong
-thời gian có hạn. Kỳ thực tập này cho em thấy khoảng cách giữa việc biết một
-công nghệ và việc dùng được nó, và đó là điều em thấy giá trị nhất.
+Em xin chân thành cảm ơn các anh chị Mentor và cộng đồng AWS Study Group đã luôn đồng hành, truyền cảm hứng và hỗ trợ tích cực trong suốt thời gian qua. Cảm ơn các thành viên trong nhóm đã luôn nỗ lực hết mình để hoàn thành dự án đúng tiến độ. Kỳ thực tập này đã giúp em rút ngắn đáng kể khoảng cách giữa lý thuyết và thực tế triển khai, tạo bước đệm vững chắc cho sự nghiệp Cloud Engineering của em.

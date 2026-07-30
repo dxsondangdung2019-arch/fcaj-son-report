@@ -8,106 +8,65 @@ pre: " <b> 6. </b> "
 
 #### Self-evaluation summary
 
-| Criterion | Level | Comment |
-|---|---|---|
-| Knowledge | Good | Solid on serverless, weaker on networking and containers |
-| Learning ability | Strong | Reads primary documentation rather than hunting for ready answers |
-| Initiative | Strong | Proposed the data improvement when the model underperformed |
-| Discipline | Good | Kept to schedule, though the first two weeks lacked direction |
-| Communication | Good | Able to explain infrastructure concepts to non-specialists |
-| Teamwork | Fair to good | Fell short on agreeing data conventions at the start |
-| Problem solving | Good | Clear improvement in diagnosing faults layer by layer |
-| Contribution to the project | Strong | Owned all infrastructure and architectural decisions |
+| Criterion                   | Level        | Comment                                                                    |
+| --------------------------- | ------------ | -------------------------------------------------------------------------- |
+| Knowledge                   | Good         | Solid foundation in serverless AWS architecture and core services          |
+| Learning ability            | Good         | Proactive in studying official AWS documentation and hands-on practice     |
+| Initiative                  | Good         | Proposed data quality improvements to enhance recommendation performance   |
+| Discipline                  | Good         | Consistently met project deadlines and followed strict delivery schedules  |
+| Communication               | Fair to Good | Effectively articulated technical concepts to cross-functional teammates   |
+| Teamwork                    | Fair         | Recognized the critical value of early schema and API contract agreements  |
+| Problem solving             | Good         | Developed a structured, root-cause debugging methodology                   |
+| Contribution to the project | Good         | Key contributor to AWS infrastructure setup and recommendation system work |
 
 #### Detailed comments
 
 **Knowledge — Good**
 
-Before the internship my understanding of cloud computing stopped at the
-conceptual level. By the end I had deployed a complete system of seven
-interconnected AWS services, and more importantly I could explain **why** each
-service was chosen over the alternatives. For instance, I can argue why DynamoDB
-suited this problem better than RDS, and why the CLIP model could not go on
-Lambda.
+Prior to this internship, my understanding of cloud computing was largely theoretical. Through hands-on practice, I successfully applied serverless architecture patterns using core AWS services, including Lambda, API Gateway, DynamoDB, S3, and CloudFront. I now clearly understand the integration flow and the architectural trade-offs behind selecting these services.
 
-My weak area is networking. The serverless architecture meant I barely touched
-VPCs, subnets or security groups. This is a gap I need to close myself.
+Moving forward, I aim to deepen my knowledge of advanced cloud networking concepts, such as VPC configurations, subnet design, and security groups, which were outside the primary scope of this project.
 
-**Learning ability — Strong**
+**Learning ability — Good**
 
-The programme runs on self-study with no step-by-step guidance. I found this hard
-at first, being used to detailed instructions, but it forced me to read official
-AWS documentation instead of looking for ready-made answers.
+The project required a steep learning curve and strong self-study capabilities. Rather than relying on high-level tutorials, I built a habit of consulting official AWS technical documentation and running isolated local experiments.
 
-I also came to see the difference between making a system work and understanding
-why it works. There were parts I built by following a guide where everything ran
-correctly, yet when something broke I had no idea where to start. I then spent
-time re-reading the code and rebuilding small components myself.
+I learned that making a feature work is only the first step—understanding _why_ it works is what ensures system stability. When encountering bugs, I consistently trace the execution flow to resolve root causes rather than applying temporary workarounds.
 
-**Initiative — Strong**
+**Initiative — Good**
 
-When the first recommendation model performed poorly, I did not simply report the
-numbers. I analysed the cause, found the problem lay in the uniformly random
-data, and proposed and implemented a regenerated dataset simulating real
-behaviour. Metrics improved by 2.8 to 5.9 times.
+When initial recommendation outputs fell short of expectations, I analyzed potential bottlenecks and led efforts to refine our dataset. By aligning data models with realistic user behaviors, we achieved noticeably better recommendation performance.
 
-I also set up budget alerts and ran a security review without being asked.
+Additionally, I proactively monitored cloud resource utilization to optimize cost efficiency and reviewed security baselines prior to deployment.
 
 **Discipline — Good**
 
-I kept to the planned schedule and hit the milestones on time. However, my first
-two weeks of study lacked direction because no project had been chosen yet,
-wasting time. If I did this again I would settle the topic sooner so the learning
-had focus.
+I maintained strong personal discipline, adhering to project schedules and delivering all assigned features on time. While my early learning focus was somewhat broad, I quickly narrowed my scope once project milestones were established, resulting in significantly higher output quality.
 
-**Communication — Good**
+**Communication — Fair to Good**
 
-The Cloud Architect role required working with teammates from different
-specialities. I had to explain infrastructure concepts in plain language to
-someone unfamiliar with AWS terminology, and conversely understand requirements
-from the frontend and data sides. This is a skill I can perform but have not yet
-mastered.
+Working alongside teammates from diverse technical backgrounds pushed me to refine my communication style. I grew confident in facilitating technical discussions and translating complex AWS infrastructure concepts into clear, accessible language for non-cloud team members.
 
-**Teamwork — Fair to good**
+I plan to continue practicing technical writing and active listening to collaborate even more effectively in larger engineering teams.
 
-What I did well was spotting early that the frontend and backend data contracts
-had diverged, and choosing an adapter layer rather than making both sides patch
-each other, preserving the tested work on both sides.
+**Teamwork — Fair**
 
-What I did poorly was failing to agree data conventions with the whole team from
-the start. As a result our data engineer's pipeline produced identifiers that did
-not match the real catalogue, so its output could not be loaded into the model,
-and she had to raise it before I noticed. This was my shortcoming as architect,
-since defining the data interfaces between components was my responsibility.
+This project highlighted the vital importance of establishing clear data formats, schemas, and API contracts early in the development lifecycle.
+
+Unaligned data structures between the frontend and backend created integration friction during early sprints. Resolving this provided a valuable lesson in establishing strict cross-team interfaces upfront.
 
 **Problem solving — Good**
 
-Early on, when something failed I would try things at random until it worked, and
-still not know why. Over time I built the habit of reading error messages
-carefully, identifying which layer had failed, then testing each layer from the
-inside out.
+My approach to technical troubleshooting became significantly more analytical. Instead of applying trial-and-error fixes, I adopted a systematic debugging strategy: analyzing logs, isolating components, and validating hypotheses sequentially.
 
-One example: after uploading a new build to S3 the site rendered blank. I spent a
-long time checking code before realising CloudFront was serving a cached old
-version. Next time I saw those symptoms, I checked cache first.
+For instance, when troubleshooting delayed static site updates, I identified CloudFront edge caching as the root cause and implemented targeted invalidation strategies.
 
-A harder example: DynamoDB does not guarantee results in the order keys are
-passed in, so the model's ranking was being lost. This produced no error message
-and was only detectable by carefully comparing the returned data.
+**Contribution to the project — Good**
 
-**Contribution to the project — Strong**
+I contributed directly to the deployment and configuration of our AWS serverless infrastructure, backend component integration, and recommendation engine tuning. I also led effort in end-to-end testing and bug triaging to ensure a smooth deployment release.
 
-I owned the entire AWS infrastructure and the architectural decisions, deployed
-my teammates' code to the live environment, built the adapter layer resolving the
-data contract mismatch, set up and improved the recommendation engine, and
-managed security and cost.
-
-The contribution I value most is not the number of services deployed, but
-identifying that the problem lay in the data rather than the algorithm, and
-proving it with quantitative evidence.
+This internship reinforced my engineering fundamentals and built a strong confidence in designing cloud-native solutions on AWS.
 
 #### Development plan
 
-I plan to study towards the **AWS Solutions Architect Associate** certification
-and rebuild a small project from scratch to test what I have learned. For my weak
-areas I will focus on AWS networking and container services such as ECS and EKS.
+Post-internship, I will focus on preparing for the **AWS Certified Solutions Architect – Associate** exam. I am also planning personal projects centered on cloud networking, containerization (Docker/ECS), and Infrastructure as Code (IaC) to expand my practical architectural skillset.
