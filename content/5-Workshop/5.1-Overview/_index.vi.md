@@ -14,7 +14,7 @@ Hệ thống trong workshop này giải quyết bằng cách học từ hành vi
 
 #### Kiến trúc
 
-![Kiến trúc tổng thể](/images/5-Workshop/architecture.png)
+![Kiến Trúc Tổng Thể](/images/5-Workshop/architecture.png)
 
 Hệ thống chia thành hai nhánh xử lý độc lập:
 
