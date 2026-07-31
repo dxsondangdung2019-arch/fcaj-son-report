@@ -1,9 +1,9 @@
 ---
-title : "Tổng quan và kiến trúc"
-date : 2026-07-28
-weight : 1
-chapter : false
-pre : " <b> 5.1 </b> "
+title: "Tổng quan và kiến trúc"
+date: 2026-07-28
+weight: 1
+chapter: false
+pre: " <b> 5.1 </b> "
 ---
 
 #### Bài toán
@@ -14,7 +14,7 @@ Hệ thống trong workshop này giải quyết bằng cách học từ hành vi
 
 #### Kiến trúc
 
-![Kiến trúc tổng thể](/images/5-Workshop/architecture.png)
+![Kiến trúc tổng thể](static/images/5-Workshop/architecture.png)
 
 Hệ thống chia thành hai nhánh xử lý độc lập:
 
