@@ -38,7 +38,7 @@ The platform addresses these challenges by deploying a complete e-commerce solut
 ### 3. Solution Architecture
 
 The platform is built on a serverless microservices-like architecture on AWS:
-![Mô tả hình ảnh](/images/5-Workshop/architecture.png)
+![Picture discription](/images/5-Workshop/architecture.png)
 
 ### AWS Services & Technologies Used
 
@@ -87,6 +87,22 @@ The platform is built on a serverless microservices-like architecture on AWS:
   - Deploy frontend to S3/CloudFront and backend to AWS Lambda.
 
 ### 6. Budget Estimation & Model Metrics
+
+**Estimated Monthly AWS Cost (Low-Traffic / Course Project Scale)**
+
+| AWS Service                                | Usage Assumption                                 | Estimated Cost (USD/month) |
+| ------------------------------------------ | ------------------------------------------------ | -------------------------- |
+| **AWS Lambda** (`fcj-api`)                 | ~1M invocations, 512MB, ~200ms avg               | $0.20 – $1.00              |
+| **API Gateway (HTTP API)**                 | ~1M requests                                     | ~$1.00                     |
+| **Amazon DynamoDB** (8 tables, On-demand)  | ~1M read/write request units                     | $5 – $10                   |
+| **Amazon S3** (frontend hosting)           | ~5 GB storage + PUT/GET requests                 | ~$0.15                     |
+| **Amazon CloudFront**                      | ~50 GB data transfer out                         | ~$4.25                     |
+| **Amazon Personalize (Campaign)**          | 1 campaign, minimum TPS, running 24/7 (~730 hrs) | **$150 – $220**            |
+| **Amazon Personalize (Solution Training)** | One-time/periodic retraining (~2–4 hrs/session)  | ~$0.50 – $1.00 per run     |
+| **CloudWatch Logs & Monitoring**           | Basic logging tier                               | ~$1.00                     |
+| **Total (steady-state, monthly)**          |                                                  | **≈ $160 – $240 / month**  |
+
+> **Note:** Amazon Personalize's always-on Campaign is by far the dominant cost driver, since it charges an hourly minimum TPS rate regardless of actual traffic. For a course/demo project, this cost can be significantly reduced by deleting the Campaign when not actively demoing, or by only re-creating it during evaluation/testing windows. Lambda, API Gateway, DynamoDB, S3, and CloudFront costs remain minimal at this traffic scale thanks to the serverless pay-per-use pricing model.
 
 **Training & Dataset Iteration Results**
 The interaction dataset was engineered to simulate realistic shopping behavior (conversion funnels, time-of-day dynamics, power-law distribution):

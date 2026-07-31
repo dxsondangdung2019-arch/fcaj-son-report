@@ -86,6 +86,22 @@ _Yêu cầu kỹ thuật_
 
 ### 6. Ước tính ngân sách & Chỉ số Mô hình
 
+**Ước tính chi phí AWS hàng tháng (Quy mô lưu lượng thấp / Đồ án môn học)**
+
+| Dịch vụ AWS                                  | Giả định mức sử dụng                            | Chi phí ước tính (USD/tháng) |
+| -------------------------------------------- | ----------------------------------------------- | ---------------------------- |
+| **AWS Lambda** (`fcj-api`)                   | ~1 triệu lượt gọi, 512MB, ~200ms trung bình     | $0.20 – $1.00                |
+| **API Gateway (HTTP API)**                   | ~1 triệu request                                | ~$1.00                       |
+| **Amazon DynamoDB** (8 bảng, On-demand)      | ~1 triệu request unit đọc/ghi                   | $5 – $10                     |
+| **Amazon S3** (lưu trữ frontend)             | ~5 GB dung lượng + request PUT/GET              | ~$0.15                       |
+| **Amazon CloudFront**                        | ~50 GB dữ liệu truyền tải ra                    | ~$4.25                       |
+| **Amazon Personalize (Campaign)**            | 1 campaign, TPS tối thiểu, chạy 24/7 (~730 giờ) | **$150 – $220**              |
+| **Amazon Personalize (Huấn luyện Solution)** | Huấn luyện lại định kỳ (~2–4 giờ/lần)           | ~$0.50 – $1.00 mỗi lần       |
+| **CloudWatch Logs & Monitoring**             | Gói ghi log cơ bản                              | ~$1.00                       |
+| **Tổng cộng (ổn định, hàng tháng)**          |                                                 | **≈ $160 – $240 / tháng**    |
+
+> **Lưu ý:** Amazon Personalize Campaign chạy liên tục là yếu tố chi phí lớn nhất, do tính phí theo TPS tối thiểu mỗi giờ bất kể lưu lượng truy cập thực tế. Đối với đồ án môn học/demo, có thể giảm đáng kể chi phí này bằng cách xóa Campaign khi không sử dụng để demo, hoặc chỉ tạo lại trong giai đoạn đánh giá/kiểm thử. Chi phí Lambda, API Gateway, DynamoDB, S3 và CloudFront ở mức tối thiểu tại quy mô lưu lượng này nhờ mô hình tính phí Serverless theo mức sử dụng thực tế.
+
 _Đánh giá Bộ dữ liệu Huấn luyện (v1 vs v2)_
 Bộ dữ liệu tương tác được sinh mô phỏng theo hành vi mua sắm thực tế mang lại kết quả cải thiện vượt trội:
 
