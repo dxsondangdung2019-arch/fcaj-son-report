@@ -387,14 +387,10 @@ https://d20h0irrznuf1m.cloudfront.net/
 Trong giai đoạn này, dữ liệu sản phẩm chưa xuất hiện do API Gateway và Backend chưa được triển khai.
 
 {{% notice warning %}}
-Sau mỗi lần upload bản build mới lên Amazon S3, bạn cần tạo **CloudFront Invalidation** để xóa cache.
-
-Nếu không, CloudFront sẽ tiếp tục trả về phiên bản cũ và bạn có thể nhầm tưởng rằng ứng dụng chưa được cập nhật.
+**Ghi nhớ điều này, nó sẽ tiết kiệm cho bạn hàng giờ.** Mỗi lần tải bản build mới lên S3, bạn **bắt buộc** phải tạo invalidation, nếu không CloudFront vẫn phục vụ bản cũ trong bộ nhớ đệm và bạn sẽ tưởng mã nguồn bị lỗi.
 
 ```bash
-aws cloudfront create-invalidation \
-  --distribution-id <DISTRIBUTION_ID> \
-  --paths "/*"
+aws cloudfront create-invalidation --distribution-id <ID-CUA-BAN> --paths "/*"
 ```
 
 {{% /notice %}}

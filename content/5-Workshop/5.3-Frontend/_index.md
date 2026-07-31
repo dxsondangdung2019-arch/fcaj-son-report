@@ -393,14 +393,10 @@ https://d20h0irrznuf1m.cloudfront.net/
 At this stage, products will not yet appear because the API Gateway and backend services have not been deployed.
 
 {{% notice warning %}}
-Whenever you upload a new build to Amazon S3, create a **CloudFront Invalidation** to clear the CDN cache.
-
-Otherwise, CloudFront may continue serving cached content, making it appear as though your latest deployment has not taken effect.
+**Remember this one, it will save you hours.** Every time you upload a new build to S3 you **must** create an invalidation, otherwise CloudFront keeps serving the cached old version and you will think your code is broken.
 
 ```bash
-aws cloudfront create-invalidation \
-  --distribution-id <DISTRIBUTION_ID> \
-  --paths "/*"
+aws cloudfront create-invalidation --distribution-id <YOUR-ID> --paths "/*"
 ```
 
 {{% /notice %}}
