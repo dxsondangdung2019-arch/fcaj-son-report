@@ -1,9 +1,9 @@
 ---
-title : "Tạo cơ sở dữ liệu"
-date : 2026-07-28
-weight : 4
-chapter : false
-pre : " <b> 5.4 </b> "
+title: "Tạo cơ sở dữ liệu"
+date: 2026-07-28
+weight: 4
+chapter: false
+pre: " <b> 5.4 </b> "
 ---
 
 Hệ thống dùng 8 bảng DynamoDB. Trước khi tạo, cần hiểu một điểm khác biệt căn bản so với cơ sở dữ liệu quan hệ.
@@ -14,23 +14,23 @@ Với cơ sở dữ liệu quan hệ, bạn chuẩn hoá dữ liệu trước r�
 
 Cụ thể ở đây, sáu bảng đầu chỉ cần tra theo một khoá duy nhất. Nhưng hai bảng cuối thì khác:
 
-- **Reviews**: cần lấy *tất cả đánh giá của một sản phẩm*
-- **Orders**: cần lấy *tất cả đơn hàng của một người dùng*
+- **Reviews**: cần lấy _tất cả đánh giá của một sản phẩm_
+- **Orders**: cần lấy _tất cả đơn hàng của một người dùng_
 
 Nếu chỉ dùng khoá đơn, muốn lấy các bản ghi đó phải chạy **Scan** đọc toàn bộ bảng rồi lọc. Tốn thời gian và tốn tiền vì DynamoDB tính phí theo lượng dữ liệu đọc.
 
 Giải pháp là dùng **khoá tổ hợp** gồm khoá phân vùng và khoá sắp xếp. Khi đó chỉ cần **Query** đọc đúng phân vùng cần thiết.
 
-| Bảng | Khoá phân vùng | Khoá sắp xếp | Nội dung |
-|---|---|---|---|
-| Products | `id` | --- | Thông tin sản phẩm |
-| Categories | `id` | --- | Danh mục |
-| Users | `id` | --- | Tài khoản, mật khẩu đã băm |
-| Sessions | `token` | --- | Phiên đăng nhập |
-| Carts | `userId` | --- | Giỏ hàng |
-| Vouchers | `code` | --- | Mã giảm giá |
-| Reviews | `productId` | `id` | Đánh giá sản phẩm |
-| Orders | `userId` | `id` | Đơn hàng |
+| Bảng       | Khoá phân vùng | Khoá sắp xếp | Nội dung                   |
+| ---------- | -------------- | ------------ | -------------------------- |
+| Products   | `id`           | ---          | Thông tin sản phẩm         |
+| Categories | `id`           | ---          | Danh mục                   |
+| Users      | `id`           | ---          | Tài khoản, mật khẩu đã băm |
+| Sessions   | `token`        | ---          | Phiên đăng nhập            |
+| Carts      | `userId`       | ---          | Giỏ hàng                   |
+| Vouchers   | `code`         | ---          | Mã giảm giá                |
+| Reviews    | `productId`    | `id`         | Đánh giá sản phẩm          |
+| Orders     | `userId`       | `id`         | Đơn hàng                   |
 
 #### Bước 1. Tạo bảng bằng console
 
