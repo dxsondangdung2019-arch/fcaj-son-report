@@ -1,9 +1,9 @@
 ---
-title : "Dọn dẹp tài nguyên"
-date : 2026-07-28
-weight : 9
-chapter : false
-pre : " <b> 5.9 </b> "
+title: "Dọn dẹp tài nguyên"
+date: 2026-07-28
+weight: 10
+chapter: false
+pre: " <b> 5.10 </b> "
 ---
 
 {{% notice warning %}}
@@ -104,14 +104,14 @@ Giữ lại **CloudWatch log group** cũng được, log rất rẻ và có th�
 
 #### Bảng kiểm dọn dẹp
 
-| Tài nguyên | Đã xoá |
-|---|---|
-| Personalize campaign | ☐ |
-| Personalize solution và dataset group | ☐ |
-| CloudFront distribution | ☐ |
-| Hai bucket S3 | ☐ |
-| API Gateway | ☐ |
-| Hàm Lambda | ☐ |
-| Tám bảng DynamoDB | ☐ |
-| IAM role | ☐ |
-| CloudWatch alarm | ☐ |
+| Tài nguyên                            | Đã xoá |
+| ------------------------------------- | ------ |
+| Personalize campaign                  | ☐      |
+| Personalize solution và dataset group | ☐      |
+| CloudFront distribution               | ☐      |
+| Hai bucket S3                         | ☐      |
+| API Gateway                           | ☐      |
+| Hàm Lambda                            | ☐      |
+| Tám bảng DynamoDB                     | ☐      |
+| IAM role                              | ☐      |
+| CloudWatch alarm                      | ☐      |

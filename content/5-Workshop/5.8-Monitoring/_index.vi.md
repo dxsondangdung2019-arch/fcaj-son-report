@@ -1,9 +1,9 @@
 ---
-title : "Giám sát và cảnh báo"
-date : 2026-07-28
-weight : 7
-chapter : false
-pre : " <b> 5.7 </b> "
+title: "Giám sát và cảnh báo"
+date: 2026-07-28
+weight: 8
+chapter: false
+pre: " <b> 5.8 </b> "
 ---
 
 Hệ thống chạy được không có nghĩa là xong. Nếu Lambda bắt đầu lỗi lúc 2 giờ sáng, bạn cần biết trước khi người dùng phàn nàn.

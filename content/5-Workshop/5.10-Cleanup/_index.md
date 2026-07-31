@@ -1,9 +1,9 @@
 ---
-title : "Clean up"
-date : 2026-07-28
-weight : 9
-chapter : false
-pre : " <b> 5.9 </b> "
+title: "Clean up"
+date: 2026-07-28
+weight: 10
+chapter: false
+pre: " <b> 5.10 </b> "
 ---
 
 {{% notice warning %}}
@@ -104,14 +104,14 @@ Keeping the **CloudWatch log group** is fine; logs are cheap and can be useful l
 
 #### Clean-up checklist
 
-| Resource | Deleted |
-|---|---|
-| Personalize campaign | ☐ |
-| Personalize solution and dataset group | ☐ |
-| CloudFront distribution | ☐ |
-| Both S3 buckets | ☐ |
-| API Gateway | ☐ |
-| Lambda function | ☐ |
-| Eight DynamoDB tables | ☐ |
-| IAM role | ☐ |
-| CloudWatch alarms | ☐ |
+| Resource                               | Deleted |
+| -------------------------------------- | ------- |
+| Personalize campaign                   | ☐       |
+| Personalize solution and dataset group | ☐       |
+| CloudFront distribution                | ☐       |
+| Both S3 buckets                        | ☐       |
+| API Gateway                            | ☐       |
+| Lambda function                        | ☐       |
+| Eight DynamoDB tables                  | ☐       |
+| IAM role                               | ☐       |
+| CloudWatch alarms                      | ☐       |

@@ -1,9 +1,9 @@
 ---
-title : "Workshop"
-date : 2026-07-28
-weight : 5
-chapter : false
-pre : " <b> 5. </b> "
+title: "Workshop"
+date: 2026-07-28
+weight: 5
+chapter: false
+pre: " <b> 5. </b> "
 ---
 
 # Building a Serverless E-commerce Recommendation System on AWS
@@ -28,16 +28,16 @@ By the end, you will have a system running live on the Internet at close to zero
 
 #### AWS services used
 
-| Service | Role in the system |
-|---|---|
-| Amazon S3 | Stores static frontend files and the training dataset |
-| Amazon CloudFront | Delivers the frontend from edge locations, provides HTTPS |
-| Amazon API Gateway | Entry point for all API calls |
-| AWS Lambda | Runs the business logic |
-| Amazon DynamoDB | Stores product, user and order data |
-| Amazon Personalize | Trains and serves the recommendation model |
-| AWS IAM | Controls permissions between services |
-| Amazon CloudWatch | Logging and alerting |
+| Service            | Role in the system                                        |
+| ------------------ | --------------------------------------------------------- |
+| Amazon S3          | Stores static frontend files and the training dataset     |
+| Amazon CloudFront  | Delivers the frontend from edge locations, provides HTTPS |
+| Amazon API Gateway | Entry point for all API calls                             |
+| AWS Lambda         | Runs the business logic                                   |
+| Amazon DynamoDB    | Stores product, user and order data                       |
+| Amazon Personalize | Trains and serves the recommendation model                |
+| AWS IAM            | Controls permissions between services                     |
+| Amazon CloudWatch  | Logging and alerting                                      |
 
 #### Contents
 
@@ -46,7 +46,8 @@ By the end, you will have a system running live on the Internet at close to zero
 3. [Deploy the frontend layer](5.3-Frontend/)
 4. [Create the database](5.4-Database/)
 5. [Deploy the API layer](5.5-Backend/)
-6. [Build the recommendation engine](5.6-Personalize/)
-7. [Monitoring and alerting](5.7-Monitoring/)
-8. [End-to-end testing](5.8-Testing/)
-9. [Clean up](5.9-Cleanup/)
+6. [Pipeline Data Engineering](5.6-Pineline)
+7. [Build the recommendation engine](5.7-Personalize/)
+8. [Monitoring and alerting](5.8-Monitoring/)
+9. [End-to-end testing](5.9-Testing/)
+10. [Clean up](5.10-Cleanup/)

@@ -1,9 +1,9 @@
 ---
-title : "Monitoring and alerting"
-date : 2026-07-28
-weight : 7
-chapter : false
-pre : " <b> 5.7 </b> "
+title: "Monitoring and alerting"
+date: 2026-07-28
+weight: 8
+chapter: false
+pre: " <b> 5.8 </b> "
 ---
 
 A system that runs is not a finished system. If Lambda starts failing at 2 a.m., you want to know before your users complain.

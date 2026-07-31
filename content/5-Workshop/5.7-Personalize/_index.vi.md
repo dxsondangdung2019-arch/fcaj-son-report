@@ -1,9 +1,9 @@
 ---
-title : "Xây dựng hệ gợi ý"
-date : 2026-07-28
-weight : 6
-chapter : false
-pre : " <b> 5.6 </b> "
+title: "Xây dựng hệ gợi ý"
+date: 2026-07-28
+weight: 7
+chapter: false
+pre: " <b> 5.7 </b> "
 ---
 
 Đây là phần trung tâm của workshop. Bạn sẽ huấn luyện một mô hình gợi ý và đưa vào phục vụ thời gian thực.
@@ -34,12 +34,12 @@ Bộ dữ liệu thứ hai mô phỏng hành vi thật với năm đặc điểm
 
 Kết quả trên cùng một recipe:
 
-| Chỉ số | Dữ liệu ngẫu nhiên | Dữ liệu mô phỏng hành vi |
-|---|---|---|
-| Precision@5 | 0,0889 | 0,4348 |
-| NDCG@10 | 0,1799 | 0,6512 |
-| MRR@25 | 0,1216 | 0,7130 |
-| Coverage | 0,8218 | 0,9505 |
+| Chỉ số      | Dữ liệu ngẫu nhiên | Dữ liệu mô phỏng hành vi |
+| ----------- | ------------------ | ------------------------ |
+| Precision@5 | 0,0889             | 0,4348                   |
+| NDCG@10     | 0,1799             | 0,6512                   |
+| MRR@25      | 0,1216             | 0,7130                   |
+| Coverage    | 0,8218             | 0,9505                   |
 
 #### Bước 1. Tạo bucket và tải dữ liệu
 
@@ -65,15 +65,17 @@ Thêm bucket policy cho phép Personalize đọc. Tạo file `bucket-policy.json
 ```json
 {
   "Version": "2012-10-17",
-  "Statement": [{
-    "Effect": "Allow",
-    "Principal": { "Service": "personalize.amazonaws.com" },
-    "Action": ["s3:GetObject", "s3:ListBucket"],
-    "Resource": [
-      "arn:aws:s3:::fcj-recsys-data-<tên-bạn>",
-      "arn:aws:s3:::fcj-recsys-data-<tên-bạn>/*"
-    ]
-  }]
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "personalize.amazonaws.com" },
+      "Action": ["s3:GetObject", "s3:ListBucket"],
+      "Resource": [
+        "arn:aws:s3:::fcj-recsys-data-<tên-bạn>",
+        "arn:aws:s3:::fcj-recsys-data-<tên-bạn>/*"
+      ]
+    }
+  ]
 }
 ```
 

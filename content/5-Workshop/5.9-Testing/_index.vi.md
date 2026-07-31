@@ -1,9 +1,9 @@
 ---
-title : "Kiểm thử toàn luồng"
-date : 2026-07-28
-weight : 8
-chapter : false
-pre : " <b> 5.8 </b> "
+title: "Kiểm thử toàn luồng"
+date: 2026-07-28
+weight: 9
+chapter: false
+pre: " <b> 5.9 </b> "
 ---
 
 Từng thành phần chạy được không đảm bảo cả hệ thống chạy được. Phần này kiểm tra toàn luồng từ trình duyệt tới mô hình.
@@ -74,13 +74,13 @@ curl -X POST https://xxxxx.execute-api.ap-southeast-1.amazonaws.com/orders \
 
 #### Bảng kiểm cuối
 
-| Hạng mục | Kết quả mong đợi |
-|---|---|
-| Trang chủ tải được qua CloudFront | Hiển thị đầy đủ giao diện |
-| Truy cập thẳng bucket S3 | Bị từ chối, mã 403 |
-| API trả về danh sách sản phẩm | JSON có 100 sản phẩm |
-| Gợi ý cho hai người dùng khác nhau | Hai danh sách khác nhau |
-| Thứ tự gợi ý | Trùng với thứ tự Personalize trả về |
-| Đặt hàng với giá bị sửa | Máy chủ dùng giá thật |
-| Mở thẳng đường dẫn con như `/cart` | Trang tải được, không lỗi 403 |
-| CloudWatch log | Có bản ghi cho mỗi lần gọi |
+| Hạng mục                           | Kết quả mong đợi                    |
+| ---------------------------------- | ----------------------------------- |
+| Trang chủ tải được qua CloudFront  | Hiển thị đầy đủ giao diện           |
+| Truy cập thẳng bucket S3           | Bị từ chối, mã 403                  |
+| API trả về danh sách sản phẩm      | JSON có 100 sản phẩm                |
+| Gợi ý cho hai người dùng khác nhau | Hai danh sách khác nhau             |
+| Thứ tự gợi ý                       | Trùng với thứ tự Personalize trả về |
+| Đặt hàng với giá bị sửa            | Máy chủ dùng giá thật               |
+| Mở thẳng đường dẫn con như `/cart` | Trang tải được, không lỗi 403       |
+| CloudWatch log                     | Có bản ghi cho mỗi lần gọi          |

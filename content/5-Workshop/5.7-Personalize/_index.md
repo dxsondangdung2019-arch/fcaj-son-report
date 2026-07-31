@@ -1,9 +1,9 @@
 ---
-title : "Build the recommendation engine"
-date : 2026-07-28
-weight : 6
-chapter : false
-pre : " <b> 5.6 </b> "
+title: "Build the recommendation engine"
+date: 2026-07-28
+weight: 7
+chapter: false
+pre: " <b> 5.7 </b> "
 ---
 
 This is the core of the workshop. You will train a recommendation model and put it into real-time service.
@@ -34,12 +34,12 @@ The second dataset simulated realistic behaviour with five properties: grouping 
 
 Results on the same recipe:
 
-| Metric | Random data | Behaviour-simulated data |
-|---|---|---|
-| Precision@5 | 0.0889 | 0.4348 |
-| NDCG@10 | 0.1799 | 0.6512 |
-| MRR@25 | 0.1216 | 0.7130 |
-| Coverage | 0.8218 | 0.9505 |
+| Metric      | Random data | Behaviour-simulated data |
+| ----------- | ----------- | ------------------------ |
+| Precision@5 | 0.0889      | 0.4348                   |
+| NDCG@10     | 0.1799      | 0.6512                   |
+| MRR@25      | 0.1216      | 0.7130                   |
+| Coverage    | 0.8218      | 0.9505                   |
 
 #### Step 1. Create a bucket and upload the data
 
@@ -65,15 +65,17 @@ Add a bucket policy allowing Personalize to read. Create `bucket-policy.json`:
 ```json
 {
   "Version": "2012-10-17",
-  "Statement": [{
-    "Effect": "Allow",
-    "Principal": { "Service": "personalize.amazonaws.com" },
-    "Action": ["s3:GetObject", "s3:ListBucket"],
-    "Resource": [
-      "arn:aws:s3:::fcj-recsys-data-<your-name>",
-      "arn:aws:s3:::fcj-recsys-data-<your-name>/*"
-    ]
-  }]
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "personalize.amazonaws.com" },
+      "Action": ["s3:GetObject", "s3:ListBucket"],
+      "Resource": [
+        "arn:aws:s3:::fcj-recsys-data-<your-name>",
+        "arn:aws:s3:::fcj-recsys-data-<your-name>/*"
+      ]
+    }
+  ]
 }
 ```
 

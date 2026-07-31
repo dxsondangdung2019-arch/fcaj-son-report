@@ -1,9 +1,9 @@
 ---
-title : "End-to-end testing"
-date : 2026-07-28
-weight : 8
-chapter : false
-pre : " <b> 5.8 </b> "
+title: "End-to-end testing"
+date: 2026-07-28
+weight: 9
+chapter: false
+pre: " <b> 5.9 </b> "
 ---
 
 Individual components working does not mean the system works. This section verifies the whole path from browser to model.
@@ -74,13 +74,13 @@ The created order must carry the **real price** from DynamoDB, not the price of 
 
 #### Final checklist
 
-| Item | Expected result |
-|---|---|
-| Home page loads over CloudFront | Full interface renders |
-| Direct access to the S3 bucket | Denied, 403 |
-| API returns the product list | JSON with 100 products |
-| Recommendations for two different users | Two different lists |
-| Recommendation order | Matches what Personalize returned |
-| Order with tampered price | Server uses the real price |
-| Opening a sub-path like `/cart` directly | Page loads, no 403 |
-| CloudWatch logs | An entry for every invocation |
+| Item                                     | Expected result                   |
+| ---------------------------------------- | --------------------------------- |
+| Home page loads over CloudFront          | Full interface renders            |
+| Direct access to the S3 bucket           | Denied, 403                       |
+| API returns the product list             | JSON with 100 products            |
+| Recommendations for two different users  | Two different lists               |
+| Recommendation order                     | Matches what Personalize returned |
+| Order with tampered price                | Server uses the real price        |
+| Opening a sub-path like `/cart` directly | Page loads, no 403                |
+| CloudWatch logs                          | An entry for every invocation     |
