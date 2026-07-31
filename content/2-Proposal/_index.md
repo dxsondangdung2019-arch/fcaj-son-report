@@ -104,18 +104,6 @@ The platform is built on a serverless microservices-like architecture on AWS:
 
 > **Note:** Amazon Personalize's always-on Campaign is by far the dominant cost driver, since it charges an hourly minimum TPS rate regardless of actual traffic. For a course/demo project, this cost can be significantly reduced by deleting the Campaign when not actively demoing, or by only re-creating it during evaluation/testing windows. Lambda, API Gateway, DynamoDB, S3, and CloudFront costs remain minimal at this traffic scale thanks to the serverless pay-per-use pricing model.
 
-**Training & Dataset Iteration Results**
-The interaction dataset was engineered to simulate realistic shopping behavior (conversion funnels, time-of-day dynamics, power-law distribution):
-
-| Metric          | Dataset v1 | Dataset v2 |
-| --------------- | ---------- | ---------- |
-| **Precision@5** | 0.0889     | 0.4348     |
-| **NDCG@10**     | 0.1799     | 0.6512     |
-| **MRR@25**      | 0.1216     | 0.7130     |
-| **Coverage**    | 0.8218     | 0.9505     |
-
-_Conclusion:_ Input data quality significantly impacts model performance over algorithm selection.
-
 ### 7. Risk Assessment
 
 #### Risk Matrix

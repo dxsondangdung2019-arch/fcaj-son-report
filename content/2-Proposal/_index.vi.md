@@ -102,18 +102,6 @@ _Yêu cầu kỹ thuật_
 
 > **Lưu ý:** Amazon Personalize Campaign chạy liên tục là yếu tố chi phí lớn nhất, do tính phí theo TPS tối thiểu mỗi giờ bất kể lưu lượng truy cập thực tế. Đối với đồ án môn học/demo, có thể giảm đáng kể chi phí này bằng cách xóa Campaign khi không sử dụng để demo, hoặc chỉ tạo lại trong giai đoạn đánh giá/kiểm thử. Chi phí Lambda, API Gateway, DynamoDB, S3 và CloudFront ở mức tối thiểu tại quy mô lưu lượng này nhờ mô hình tính phí Serverless theo mức sử dụng thực tế.
 
-_Đánh giá Bộ dữ liệu Huấn luyện (v1 vs v2)_
-Bộ dữ liệu tương tác được sinh mô phỏng theo hành vi mua sắm thực tế mang lại kết quả cải thiện vượt trội:
-
-| Chỉ số          | Dữ liệu v1 | Dữ liệu v2 |
-| --------------- | ---------- | ---------- |
-| **Precision@5** | 0.0889     | 0.4348     |
-| **NDCG@10**     | 0.1799     | 0.6512     |
-| **MRR@25**      | 0.1216     | 0.7130     |
-| **Coverage**    | 0.8218     | 0.9505     |
-
-_Kết luận:_ Chất lượng dữ liệu đầu vào đóng vai trò quyết định đến hiệu năng mô hình hơn việc thay đổi thuật toán.
-
 ### 7. Đánh giá rủi ro
 
 _Ma trận rủi ro_
