@@ -383,7 +383,12 @@ Then open:
 https://dxxxxxxxxxxxx.cloudfront.net
 ```
 
-The frontend application should load successfully.
+The application interface will be displayed successfully as shown in the images below. You can also access the deployed application through the following link:
+
+https://d20h0irrznuf1m.cloudfront.net/
+
+![Web Frontend Interface](/images/5-Workshop/5.3/a.png)
+![Web Frontend Interface](/images/5-Workshop/5.3/b.png)
 
 At this stage, products will not yet appear because the API Gateway and backend services have not been deployed.
 

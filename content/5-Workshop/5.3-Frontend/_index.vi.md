@@ -377,7 +377,12 @@ Sau đó mở địa chỉ:
 https://dxxxxxxxxxxxx.cloudfront.net
 ```
 
-Giao diện sẽ hiển thị bình thường.
+Giao diện ứng dụng sẽ hiển thị thành công như hình bên dưới hoặc bạn có thể xem qua đường link này:
+
+https://d20h0irrznuf1m.cloudfront.net/
+
+![Giao diện Web Frontend](/images/5-Workshop/5.3/a.png)
+![Giao diện Web Frontend](/images/5-Workshop/5.3/b.png)
 
 Trong giai đoạn này, dữ liệu sản phẩm chưa xuất hiện do API Gateway và Backend chưa được triển khai.
 
