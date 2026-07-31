@@ -8,35 +8,47 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-- **Application Deployment using Docker & Docker Compose on AWS:**
-  - Understand application containerization fundamentals, local testing, and multi-container deployment on Amazon EC2.
-  - Configure Amazon RDS instances as backend databases and integrate them with containerized web applications.
-  - Build custom Docker images, write `docker-compose.yml` configurations, and manage Docker image registries/pushing.
-- **Microservices Deployment on Amazon Elastic Container Service (ECS):**
-  - Master Amazon ECS concepts for running and stop-managing Docker containers across a cluster.
-  - Register service namespaces using AWS Cloud Map for service discovery.
-  - Define ECS Task Definitions, launch ECS Clusters, configure Application Load Balancers (ALB), and create scalable ECS Services.
-  - Validate application health via ALB endpoints and perform resource cleanup.
+- **Finalize Full-Stack Application Workshop:**
+  - Complete all remaining code implementation and integration tasks for the full-stack application.
+  - Conduct final testing, debugging, and quality assurance before deployment.
+  - Prepare comprehensive documentation for the application (user guide, technical docs, API documentation).
+- **Report Writing & Documentation:**
+  - Consolidate all weekly worklogs into a comprehensive project report.
+  - Create technical documentation covering architecture, deployment, and implementation details.
+  - Prepare presentation materials and final deliverables for project completion.
+- **Project Review & Final Submission:**
+  - Review all project deliverables and ensure completeness.
+  - Conduct final project walkthrough and demonstration.
+  - Submit final report and all required documentation.
 
 ### Tasks to be carried out this week:
 
-| Day | Task                                                                                                                                                                                                                                                                                                                                               | Start Date | Completion Date | Reference Material                                                                                                                       |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Mon | - **Docker Fundamentals & RDS Integration:**<br> - Test local container deployment and prepare deployment scripts<br> - Launch and configure Amazon RDS database instance<br> - Provision and configure Amazon EC2 instance with Docker environment                                                                                                | 2026-07-26 | 2026-07-26      | [Deploy Application on Docker](https://000015.awsstudygroup.com/vi/1-introduce/)                                                         |
-| Tue | - **Docker & Docker Compose Deployment on EC2:**<br> - Deploy web applications using standalone Docker images<br> - Orchestrate multi-container applications using Docker Compose<br> - Push built container images to container registry and clean up EC2 local resources                                                                         | 2026-07-27 | 2026-07-27      | [Deploy Application on Docker](https://000015.awsstudygroup.com/vi/1-introduce/)                                                         |
-| Wed | - **Amazon ECS Architecture & Cluster Setup:**<br> - Study Amazon ECS architecture, cluster concepts, and service discovery mechanisms<br> - Complete prerequisite configurations and register namespaces in AWS Cloud Map<br> - Create an Amazon ECS Cluster for container hosting                                                                | 2026-07-28 | 2026-07-28      | [Deploy Applications on Amazon ECS](https://000016.awsstudygroup.com/vi/1-introduce/)                                                    |
-| Thu | - **ECS Task Definitions, ALB & Service Deployment:**<br> - Create ECS Task Definitions specifying container images, CPU/Memory limits, and port mappings<br> - Configure Application Load Balancer (ALB) with Target Groups and listener rules<br> - Create and launch ECS Service connected to the ALB for automated scaling and traffic routing | 2026-07-29 | 2026-07-29      | [Deploy Applications on Amazon ECS](https://000016.awsstudygroup.com/vi/1-introduce/)                                                    |
-| Fri | - **Verification, Testing & Complete Resource Cleanup:**<br> - Test deployment results by accessing application endpoints via ALB DNS<br> - Verify container health checks, auto-recovery, and ECS task status<br> - Clean up ECS Services, Clusters, ALBs, Cloud Map namespaces, EC2, and RDS instances                                           | 2026-07-30 | 2026-07-30      | [Deploy on Docker](https://000015.awsstudygroup.com/vi/1-introduce/) & [Deploy on ECS](https://000016.awsstudygroup.com/vi/1-introduce/) |
+| Day | Task                                                                                                                                                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                                                                                                                                       |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mon | - **Final Code Implementation (Workshop Completion):**<br> - Complete any remaining frontend/backend code implementation<br> - Integrate final features and functionalities into the application<br> - Perform thorough code refactoring and cleanup<br> - Run final unit tests, integration tests, and end-to-end tests               | 2026-07-26 | 2026-07-26      | [React Documentation](https://react.dev/) <br> [Node.js Documentation](https://nodejs.org/docs/)                                                         |
+| Tue | - **Application Deployment & Testing:**<br> - Deploy the complete full-stack application to production environment<br> - Verify all features working correctly in production<br> - Perform load testing and performance optimization<br> - Fix any last-minute bugs or issues discovered during deployment                             | 2026-07-27 | 2026-07-27      | [Vercel Documentation](https://vercel.com/docs) <br> [AWS Amplify Documentation](https://docs.aws.amazon.com/amplify/)                                   |
+| Wed | - **Report Writing (Part 1 - Project Overview & Architecture):**<br> - Write project introduction, objectives, and scope<br> - Document system architecture (FE, BE, Database, AWS services used)<br> - Create architecture diagrams and flowcharts<br> - Detail technical stack and technologies used                                 | 2026-07-28 | 2026-07-28      | [FCJ Workshop Template](https://github.com/thienluhoan/fcj-workshop-template) <br> [Technical Writing Guide](https://developers.google.com/tech-writing) |
+| Thu | - **Report Writing (Part 2 - Implementation & Results):**<br> - Document implementation details for frontend, backend, and AWS integration<br> - Write about challenges faced and solutions implemented<br> - Include code snippets, screenshots, and deployment evidence<br> - Compile weekly worklogs into cohesive project report   | 2026-07-29 | 2026-07-29      | [FCJ Workshop Template](https://github.com/thienluhoan/fcj-workshop-template) <br> [Markdown Guide](https://www.markdownguide.org/)                      |
+| Fri | - **Final Review, Presentation & Submission:**<br> - Review and finalize all documentation and reports<br> - Create presentation slides for project demonstration<br> - Conduct final project walkthrough and demo<br> - Submit all deliverables (code, report, presentation)<br> - Complete project retrospective and lessons learned | 2026-07-30 | 2026-07-30      | [FCJ Workshop Template](https://github.com/thienluhoan/fcj-workshop-template) <br> [Presentation Template](https://docs.google.com/presentation/)        |
 
 ### Week 8 Achievements:
 
-- **Docker Containerization Mastery:**
-  - Successfully containerized applications locally and deployed them to AWS EC2 using both standalone Docker images and Docker Compose orchestrations.
-  - Integrated containerized front-end/backend applications with Amazon RDS managed databases.
+- **Completed Full-Stack Application Development:**
+  - Successfully finalized all code implementation for the full-stack application.
+  - Deployed application to production environment with all features functioning correctly.
+  - Conducted comprehensive testing ensuring application reliability and performance.
 
-- **Enterprise Container Orchestration with Amazon ECS:**
-  - Provisioned high-availability ECS Clusters, managed task definitions, and implemented service discovery via AWS Cloud Map.
-  - Configured Application Load Balancers (ALB) to distribute web traffic smoothly across running ECS Tasks and Services.
+- **Comprehensive Documentation & Reporting:**
+  - Created detailed project report covering architecture, implementation, and deployment.
+  - Documented technical decisions, challenges faced, and solutions implemented.
+  - Compiled weekly worklogs into a cohesive project narrative.
 
-- **Cloud Governance & Cost Cleanup:**
-  - Conducted end-to-end verification of deployed microservices and systematically removed all ECS, ALB, RDS, and EC2 resources to prevent unnecessary cloud costs.
+- **Project Completion & Delivery:**
+  - Prepared and delivered final presentation and project demonstration.
+  - Submitted all project deliverables including code, documentation, and report.
+  - Completed project retrospective with key learnings and future recommendations.
+
+- **Professional Presentation:**
+  - Created clear, visually appealing presentation materials for project demonstration.
+  - Articulated project journey from requirements to final implementation effectively.
+  - Demonstrated working application with all integrated features and AWS components.

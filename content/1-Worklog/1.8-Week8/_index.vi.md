@@ -6,41 +6,49 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 ### Mục tiêu tuần 8:
 
-- **Triển khai ứng dụng với Docker & Docker Compose trên AWS:**
-  - Hiểu cách đóng gói ứng dụng bằng Docker, chạy thử nghiệm local và triển khai lên máy chủ Amazon EC2.
-  - Cấu hình Cơ sở dữ liệu Amazon RDS và kết nối với ứng dụng containerized.
-  - Xây dựng Docker Image, thiết lập `docker-compose.yml` điều phối đa container và đẩy image lên registry.
-- **Triển khai ứng dụng trên Amazon Elastic Container Service (ECS):**
-  - Nắm vững khái niệm Amazon ECS trong việc quản lý, chạy và điều phối các Docker container trên hạ tầng đám mây.
-  - Đăng ký Namespace trên AWS Cloud Map phục vụ cơ chế định tuyến và khám phá dịch vụ (Service Discovery).
-  - Khởi tạo ECS Cluster, định nghĩa ECS Task Definition, cấu hình Application Load Balancer (ALB) và triển khai ECS Service.
-  - Kiểm thử kết quả vận hành qua ALB và tiến hành dọn dẹp tài nguyên sau bài lab.
+- **Hoàn thiện ứng dụng Full-Stack Workshop:**
+  - Hoàn thành tất cả code còn lại và nhiệm vụ tích hợp cho ứng dụng full-stack.
+  - Tiến hành kiểm thử cuối cùng, gỡ lỗi và đảm bảo chất lượng trước khi triển khai.
+  - Chuẩn bị tài liệu toàn diện cho ứng dụng (hướng dẫn sử dụng, tài liệu kỹ thuật, API documentation).
+- **Viết báo cáo & Tài liệu:**
+  - Tổng hợp tất cả worklogs hàng tuần thành báo cáo dự án toàn diện.
+  - Tạo tài liệu kỹ thuật bao gồm kiến trúc, triển khai và chi tiết cài đặt.
+  - Chuẩn bị tài liệu thuyết trình và các sản phẩm bàn giao cuối cùng cho dự án.
+- **Tổng kết Dự án & Bàn giao:**
+  - Rà soát tất cả sản phẩm bàn giao và đảm bảo tính đầy đủ.
+  - Tiến hành chạy thử và trình diễn dự án lần cuối.
+  - Nộp báo cáo cuối cùng và tất cả tài liệu yêu cầu.
 
 ### Các công việc cần triển khai trong tuần này:
 
-| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                            | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                           |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| 2   | - **Nền tảng Docker & Khởi tạo RDS/EC2:**<br> - Kiểm thử chạy ứng dụng Docker ở môi trường Local và chuẩn bị kịch bản triển khai<br> - Khởi tạo và cấu hình cơ sở dữ liệu Amazon RDS Instance<br> - Cấu hình máy chủ Amazon EC2, cài đặt môi trường Docker sẵn sàng triển khai                                                                       | 2026-07-26   | 2026-07-26      | [Deploy Application on Docker](https://000015.awsstudygroup.com/vi/1-introduce/)                                                         |
-| 3   | - **Thực hành Triển khai Docker & Docker Compose:**<br> - Triển khai ứng dụng web lên EC2 bằng phương pháp Docker Image đơn lẻ<br> - Tự động hóa và điều phối hệ thống đa container bằng Docker Compose<br> - Thực hành đẩy (Push) Docker Image lên Registry lưu trữ                                                                                 | 2026-07-27   | 2026-07-27      | [Deploy Application on Docker](https://000015.awsstudygroup.com/vi/1-introduce/)                                                         |
-| 4   | - **Kiến trúc Amazon ECS & Cấu hình Cloud Map:**<br> - Tìm hiểu kiến trúc Amazon ECS, khái niệm Cluster, Task và Service<br> - Hoàn thành các bước chuẩn bị và đăng ký Namespace trên AWS Cloud Map<br> - Khởi tạo Amazon ECS Cluster phục vụ quản lý container                                                                                      | 2026-07-28   | 2026-07-28      | [Deploy applications on Amazon ECS](https://000016.awsstudygroup.com/vi/1-introduce/)                                                    |
-| 5   | - **Cấu hình Task Definition, ALB & ECS Service:**<br> - Tạo ECS Task Definition quy định thông số RAM/CPU, port mapping và container image<br> - Thiết lập Application Load Balancer (ALB) đi kèm Target Group và Listener rules<br> - Khởi tạo ECS Service kết nối với ALB để tự động điều phối lượng truy cập                                     | 2026-07-29   | 2026-07-29      | [Deploy applications on Amazon ECS](https://000016.awsstudygroup.com/vi/1-introduce/)                                                    |
-| 6   | - **Kiểm thử hệ thống & Dọn dẹp tài nguyên:**<br> - Kiểm tra kết quả triển khai ứng dụng bằng cách truy cập tên miền/IP của Application Load Balancer<br> - Xác minh trạng thái hoạt động (Health check) của các task container trên ECS<br> - Thực hiện xóa toàn bộ ECS Service, ECS Cluster, ALB, Cloud Map, RDS và EC2 để tránh phát sinh chi phí | 2026-07-30   | 2026-07-30      | [Deploy on Docker](https://000015.awsstudygroup.com/vi/1-introduce/) & [Deploy on ECS](https://000016.awsstudygroup.com/vi/1-introduce/) |
+| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                                           |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | - **Hoàn thiện Code (Workshop Completion):**<br> - Hoàn thành các phần code frontend/backend còn lại<br> - Tích hợp các tính năng và chức năng cuối cùng vào ứng dụng<br> - Thực hiện refactor và làm sạch code kỹ lưỡng<br> - Chạy unit tests, integration tests và end-to-end tests lần cuối                                           | 2026-07-26   | 2026-07-26      | [React Documentation](https://react.dev/) <br> [Node.js Documentation](https://nodejs.org/docs/)                                                         |
+| 3   | - **Triển khai & Kiểm thử ứng dụng:**<br> - Triển khai ứng dụng full-stack hoàn chỉnh lên môi trường production<br> - Xác minh tất cả tính năng hoạt động đúng trên production<br> - Thực hiện load testing và tối ưu hiệu suất<br> - Sửa các lỗi phát sinh trong quá trình triển khai                                                   | 2026-07-27   | 2026-07-27      | [Vercel Documentation](https://vercel.com/docs) <br> [AWS Amplify Documentation](https://docs.aws.amazon.com/amplify/)                                   |
+| 4   | - **Viết báo cáo (Phần 1 - Tổng quan & Kiến trúc):**<br> - Viết giới thiệu dự án, mục tiêu và phạm vi<br> - Ghi lại kiến trúc hệ thống (FE, BE, Database, AWS services)<br> - Tạo sơ đồ kiến trúc và luồng xử lý<br> - Chi tiết về công nghệ sử dụng                                                                                     | 2026-07-28   | 2026-07-28      | [FCJ Workshop Template](https://github.com/thienluhoan/fcj-workshop-template) <br> [Technical Writing Guide](https://developers.google.com/tech-writing) |
+| 5   | - **Viết báo cáo (Phần 2 - Triển khai & Kết quả):**<br> - Ghi lại chi tiết triển khai frontend, backend và tích hợp AWS<br> - Viết về thách thức gặp phải và giải pháp đã thực hiện<br> - Bao gồm code snippets, screenshots và bằng chứng triển khai<br> - Tổng hợp weekly worklogs thành báo cáo dự án thống nhất                      | 2026-07-29   | 2026-07-29      | [FCJ Workshop Template](https://github.com/thienluhoan/fcj-workshop-template) <br> [Markdown Guide](https://www.markdownguide.org/)                      |
+| 6   | - **Rà soát cuối, Thuyết trình & Bàn giao:**<br> - Rà soát và hoàn thiện tất cả tài liệu và báo cáo<br> - Tạo slide thuyết trình cho buổi trình diễn dự án<br> - Tiến hành chạy thử và trình diễn dự án lần cuối<br> - Nộp tất cả sản phẩm bàn giao (code, báo cáo, thuyết trình)<br> - Hoàn thành tổng kết dự án và bài học kinh nghiệm | 2026-07-30   | 2026-07-30      | [FCJ Workshop Template](https://github.com/thienluhoan/fcj-workshop-template) <br> [Presentation Template](https://docs.google.com/presentation/)        |
 
 ### Kết quả đạt được tuần 8:
 
-- **Làm chủ kỹ năng Đóng gói & Triển khai Docker:**
-  - Đóng gói thành công ứng dụng thành Docker Image và điều phối chạy đa dịch vụ mượt mà bằng Docker Compose trên EC2.
-  - Kết nối ứng dụng containerized tới dịch vụ cơ sở dữ liệu quản lý Amazon RDS an toàn và ổn định.
+- **Hoàn thiện phát triển ứng dụng Full-Stack:**
+  - Hoàn thành tất cả code cho ứng dụng full-stack.
+  - Triển khai ứng dụng lên môi trường production với tất cả tính năng hoạt động chính xác.
+  - Tiến hành kiểm thử toàn diện đảm bảo độ tin cậy và hiệu suất của ứng dụng.
 
-- **Thành thạo Quản trị Container với Amazon ECS:**
-  - Khởi tạo và quản lý thành công ECS Cluster, định nghĩa linh hoạt các Task Definition và cấu hình Service Discovery với AWS Cloud Map.
-  - Tích hợp thành công Application Load Balancer (ALB) giúp phân phối tải truy cập mượt mà tới các container.
+- **Báo cáo & Tài liệu toàn diện:**
+  - Tạo báo cáo dự án chi tiết bao gồm kiến trúc, triển khai và cài đặt.
+  - Ghi lại các quyết định kỹ thuật, thách thức gặp phải và giải pháp đã thực hiện.
+  - Tổng hợp weekly worklogs thành câu chuyện dự án mạch lạc.
 
-- **Quản trị Tài nguyên & Tối ưu Chi phí:**
-  - Hoàn tất kiểm thử và dọn dẹp triệt để các tài nguyên ECS, ALB, Cloud Map, RDS, EC2 để tối ưu chi phí tài khoản.
+- **Hoàn thiện & Bàn giao dự án:**
+  - Chuẩn bị và trình bày bài thuyết trình cuối cùng và trình diễn dự án.
+  - Nộp tất cả sản phẩm bàn giao bao gồm code, tài liệu và báo cáo.
+  - Hoàn thành tổng kết dự án với các bài học kinh nghiệm và khuyến nghị cho tương lai.
+
+- **Thuyết trình Chuyên nghiệp:**
+  - Tạo tài liệu thuyết trình rõ ràng, hấp dẫn cho buổi trình diễn dự án.
+  - Trình bày hiệu quả hành trình dự án từ yêu cầu đến triển khai cuối cùng.
+  - Trình diễn ứng dụng đang hoạt động với tất cả tính năng tích hợp và các thành phần AWS.
