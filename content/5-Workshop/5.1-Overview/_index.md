@@ -1,9 +1,9 @@
 ---
-title : "Overview and architecture"
-date : 2026-07-28
-weight : 1
-chapter : false
-pre : " <b> 5.1 </b> "
+title: "Overview and architecture"
+date: 2026-07-28
+weight: 1
+chapter: false
+pre: " <b> 5.1 </b> "
 ---
 
 #### The problem
@@ -14,7 +14,7 @@ The system in this workshop addresses that by learning from actual user behaviou
 
 #### Architecture
 
-![Overall architecture](/images/5-Workshop/architecture.png)
+![Overall architecture](static/images/5-Workshop/architecture.png)
 
 The system splits into two independent paths:
 
