@@ -6,22 +6,24 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Trong suốt chương trình thực tập kéo dài 8 tuần, tôi đã từng bước tìm hiểu, thực hành và triển khai các giải pháp kiến trúc điện toán đám mây trên nền tảng Amazon Web Services (AWS). Trang nhật ký công việc này tổng hợp lại toàn bộ lộ trình kỹ thuật, các công việc chi tiết và kết quả đạt được qua từng tuần.
+Trong suốt chương trình thực tập kéo dài 8 tuần tại First Cloud AI Journey (FCAJ), tôi đã được học, thực hành và triển khai các giải pháp kiến trúc đám mây trên Amazon Web Services (AWS). Chương trình bao gồm các dịch vụ AWS từ cơ bản đến nâng cao như IAM, VPC, EC2, RDS, Auto Scaling, Load Balancing, CloudWatch, IAM Identity Center và AWS CLI. Bên cạnh đó, tôi còn phát triển một ứng dụng full-stack với công nghệ frontend hiện đại (React/Node.js) tích hợp với hạ tầng đám mây AWS.
 
-Dưới đây là tóm tắt nội dung công việc được triển khai theo từng tuần:
+Nhật ký công việc này ghi lại toàn bộ hành trình kỹ thuật, các nhiệm vụ chi tiết theo tuần, những thành quả học tập quan trọng và kinh nghiệm triển khai thực tế.
 
-**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
+Dưới đây là tóm tắt các nhiệm vụ đã hoàn thành theo từng tuần:
 
-**Tuần 2:** [Nền tảng mạng và xây dựng kiến trúc VPC](1.2-week2/)
+**Tuần 1:** [Onboarding, AWS Free Tier 2025, IAM & VPC Cơ bản](1.1-week1/)
 
-**Tuần 3:** [Quản trị tài nguyên tính toán và lưu trữ với EC2, EBS và S3](1.3-week3/)
+**Tuần 2:** [VPC Nâng cao, EC2 Cơ bản & Triển khai Ứng dụng Đa Hệ điều hành](1.2-week2/)
 
-**Tuần 4:** [Triển khai và quản trị cơ sở dữ liệu với Amazon RDS và DynamoDB](1.4-week4/)
+**Tuần 3:** [Amazon RDS, High Availability, Sao lưu & Tích hợp Ứng dụng](1.3-week3/)
 
-**Tuần 5:** [Xây dựng hệ thống có tính sẵn sàng cao với Elastic Load Balancing và Auto Scaling](1.5-week5/)
+**Tuần 4:** [Auto Scaling, Load Balancing, Thiết kế Frontend & AWS Budgets](1.4-week4/)
 
-**Tuần 6:** [Nền tảng AWS CLI và thực hành bảo mật hệ thống](1.6-week6/)
+**Tuần 5:** [Phát triển Frontend với Node.js, CloudWatch Monitoring & AWS Support](1.5-week5/)
 
-**Tuần 7:** [Quản trị AWS CLI nâng cao và quản lý danh tính tập trung với IAM Identity Center](1.7-week7/)
+**Tuần 6:** [Hoàn thiện Frontend, AWS CLI & Hybrid DNS với Route 53 Resolver](1.6-week6/)
 
-**Tuần 8:** [Triển khai ứng dụng với Docker và Amazon Elastic Container Service (ECS)](1.8-week8/)
+**Tuần 7:** [AWS CLI Nâng cao & Thiết lập IAM Identity Center](1.7-week7/)
+
+**Tuần 8:** [Hoàn thiện Code Cuối cùng, Triển khai, Viết Báo cáo & Nộp Dự án](1.8-week8/)
